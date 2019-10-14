@@ -1,6 +1,6 @@
 {
   "name": "bs-rsuite-ui-react",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Reason(React) bindings for Rsuite UI library",
   "keywords": [
     "bucklescript",
@@ -9,7 +9,7 @@
     "rsuite"
   ],
   "repository": "https://github.com/shurygindv/bs-rsuite-ui-react",
-  "author": "shurygindv <shurygindv1@gmail.com>",
+  "author": "Daniil Shurygin <shurygindv1@gmail.com>",
   "license": "MIT",
   "scripts": {
     "bs:build": "bsb -make-world",
@@ -17,6 +17,9 @@
   },
   "devDependencies": {
     "bs-platform": "^5.0.6",
-    "reason-react": "^0.7.0"
+    "reason-react": "~0.7.0"
+  },
+  "dependencies": {
+    "rsuite": "^4.0.3"
   }
 }
