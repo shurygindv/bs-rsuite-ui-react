@@ -1,0 +1,22 @@
+{
+    "name": "bs-rsuite-ui-react",
+    "namespace": "rsuite-ui",
+    "sources": {
+        "dir": "src",
+        "subdirs": false
+    },
+    "package-specs": {
+        "module": "commonjs",
+        "in-source": true
+    },
+    "bs-dependencies": [
+        "reason-react"
+    ],
+    "bsc-flags": [
+        "-bs-super-errors"
+    ],
+    "reason": {
+        "react-jsx": 3
+    },
+    "refmt": 3
+}

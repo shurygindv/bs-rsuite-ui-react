@@ -1,1 +1,2 @@
-# bs-rsuite-ui-react
+# ReasonML bindings for rsuite
+
