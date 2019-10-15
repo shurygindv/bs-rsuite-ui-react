@@ -26,13 +26,13 @@ yarn add "https://github.com/shurygindv/bs-rsuite-ui-react.git"
 
 **III**. We would be to see a sea of colors, sky and sun, there are two ways to achieve it, import:
 
-LESS:
+`LESS`
 
 ```reason
 [%bs.raw {|require('rsuite/lib/styles/index.less')|}];
 ```
 
-or plain CSS
+or as plain `CSS`
 
 ```reason
 [%bs.raw {|require('rsuite/dist/styles/rsuite-default.css')|}];
@@ -42,21 +42,27 @@ or plain CSS
 
 TODO
 
+## Contributions
+
+It would be great! 
+Make our world better!
+All contributions are welcomed.
+
 ## FAQ (just to save time...)
 
-1. How can we pass `Component` as prop?
+**1**. How can we pass `Component` as prop?
  - Put it in a separate function
  - See: https://github.com/reasonml/reason-react/blob/master/docs/component-as-prop.md
 
-2. What the different between ReasonReact.string and React.string?
+**2**. What the different between ReasonReact.string and React.string?
 - They are the same (aliases)
 - See: https://github.com/reasonml/reason-react/issues/406 comments
 
-3. How can we pass string as prop?
+**3**. How can we pass string as prop?
 
 - Use `React.string("example")` instead `"example"`
 
-4. What `type__` mean as `Component` prop?
+**4**. What `type__` mean as `Component` prop?
 
 - `type` is reserved in Reason/Ocaml,
 - See: https://bucklescript.github.io/docs/en/object
