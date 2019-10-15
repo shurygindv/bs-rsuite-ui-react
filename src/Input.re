@@ -6,7 +6,7 @@ external make: (
   ~defaultValue: int=?,
   ~value: int=?,
   ~disabled: bool=?,
-  ~type__: [@bs.string] [
+  ~_type: [@bs.string] [
     | `text
   ]=?,
   ~size: [@bs.string] [
