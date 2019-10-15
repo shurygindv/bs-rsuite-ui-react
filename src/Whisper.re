@@ -31,4 +31,10 @@ external make: (
     | `bottomStart
     | `bottomEnd
   ]=?,
+  ~trigger: [@bs.string] [
+    | //   TODO
+      `click
+    | `hover
+    | `contextMenu
+  ] =?
 ) => React.element = "Whisper";
