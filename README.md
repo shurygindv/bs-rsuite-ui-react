@@ -1,6 +1,6 @@
 # ReasonML bindings for  [Rsuite UI React library](https://rsuitejs.com)
 
- [Official documentation](https://rsuitejs.com/en/components/overview)
+ [Official overview](https://rsuitejs.com/en/components/overview)
 
 ## Roadmap
 
@@ -9,67 +9,68 @@
 🛑 = unimplemented<br>
 
 
-|  Type       | Component           | Status | 
-|   :-:       | ------------------- |   :-:  |
-|  General    | `<Button />`        |   ✅   |
-|  General    | `<Icon />`    |   ✅   |
-|  General    | `<Tooltip />`    |   ✅   |
-|  General    | `<Popover />`    |   ✅   |
-|  General    | `<Alert />`    |   ✅   |
-|  General    | `<Notification />`    |   🛑   |
-|  General    | `<Message />`    |   ✅   |
-|  General    | `<Loader />`    |   ✅   |
-|  General    | `<Modal />`    |   🛑   |
-|  General    | `<Drawer />`    |   🛑   |
-|  General    | `<Alert />`    |   ✅   |
-|  General    | `<Divider />`    |   ✅   |
-|  General    | `<Progress />`    |   ✅   |
-|  General    | `<Placeholder />`    |   ✅   |
-|   ::      | ------------------- |   ::  |
-|  Navigation    | `<Dropdown />`    |   ✅   |
-|  Navigation    | `<Nav />`    |   ✅   |
-|  Navigation    | `<Navbar />`       |   ✅   |
-|  Navigation    | `<Sidenav />`       |   ✅   |
-|  Navigation    | `<Steps />`        |   🛑   |
-|  Navigation    | `<Pagination />`     |   🛑   |
-|  Navigation    | `<Breadcrumb />`     |   🛑   |
-|   ::      | ------------------- |   ::  |
-|  Data Entry    | `<Form />`       |   🛑   |
-|  Data Entry    | `<Checkbox />`       |   ✅   |
-|  Data Entry    | `<Radio />`       |   🛑   |
-|  Data Entry    | `<Input />`       |   ✅   |
-|  Data Entry    | `<InputNumber />`       |   🛑   |
-|  Data Entry    | `<AutoComplete />`       |   🛑   |
-|  Data Entry    | `<Toggle />`       |   🛑   |
-|  Data Entry    | `<InputPicker />`       |   🛑   |
-|  Data Entry    | `<TagPicker />`       |   🛑   |
-|  Data Entry    | `<SelectPicker />`       |   🛑   |
-|  Data Entry    | `<CheckPicker />`       |   🛑   |
-|  Data Entry    | `<Toggle />`       |   🛑   |
-|  Data Entry    | `<TreePicker />`       |   🛑   |
-|  Data Entry    | `<CheckTreePicker />`       |   🛑   |
-|  Data Entry    | `<Cascader />`       |   🛑   |
-|  Data Entry    | `<MultiCascader />`       |   🛑   |
+|  Type       | Component                 | Status | 
+|   :-:       | --------------------------|   :-:  |
+|  General    | `<Button />`              |   ✅   |
+|  General    | `<Icon />`                |   ✅   |
+|  General    | `<Tooltip />`             |   ✅   |
+|  General    | `<Popover />;<Whisper />` |   ✅   |
+|  General    | `<Alert />`               |   ✅   |
+|  General    | `<Notification />`        |   🛑   |
+|  General    | `<Message />`             |   ✅   |
+|  General    | `<Loader />`              |   ✅   |
+|  General    | `<Modal />`               |   🛑   |
+|  General    | `<Drawer />`              |   🛑   |
+|  General    | `<Alert />`               |   ✅   |
+|  General    | `<Divider />`             |   ✅   |
+|  General    | `<Progress />`            |   ✅   |
+|  General    | `<Placeholder />`         |   ✅   |
+|   :-:       | --------------------------|        |
+|  Navigation    | `<Dropdown />`         |   ✅   |
+|  Navigation    | `<Nav />`              |   ✅   |
+|  Navigation    | `<Navbar />`           |   ✅   |
+|  Navigation    | `<Sidenav />`          |   ✅   |
+|  Navigation    | `<Steps />`            |   🛑   |
+|  Navigation    | `<Pagination />`       |   🛑   |
+|  Navigation    | `<Breadcrumb />`       |   🛑   |
+|   :-:       | --------------------------|   :-:  |
+|  Data Entry    | `<Form />`             |   🛑   |
+|  Data Entry    | `<Checkbox />`         |   ✅   |
+|  Data Entry    | `<Radio />`            |   🛑   |
+|  Data Entry    | `<Input />`            |   ✅   |
+|  Data Entry    | `<InputNumber />`      |   🛑   |
+|  Data Entry    | `<AutoComplete />`     |   🛑   |
+|  Data Entry    | `<Toggle />`           |   ✅   |
+|  Data Entry    | `<InputPicker />`      |   ✅   |
+|  Data Entry    | `<TagPicker />`        |   ✅   |
+|  Data Entry    | `<SelectPicker />`     |   ✅   |
+|  Data Entry    | `<CheckPicker />`      |   ✅   |
+|  Data Entry    | `<Toggle />`           |   ✅   |
+|  Data Entry    | `<TreePicker />`       |   ✅   |
+|  Data Entry    | `<CheckTreePicker />`  |   ✅   |
+|  Data Entry    | `<Cascader />`         |   ✅   |
+|  Data Entry    | `<MultiCascader />`    |   ✅   |
 |  Data Entry    | `<DatePicker />`       |   🛑   |
-|  Data Entry    | `<DateRangePicker />`       |   🛑   |
-|  Data Entry    | `<Slider />`       |   🛑   |
-|  Data Entry    | `<Uploader />`       |   🛑   |
-|   ::      | ------------------- |   ::  |
-|  Data Display    | `<Avatar />`       |   ✅   |
-|  Data Display    | `<Badge />`       |   🛑   |
-|  Data Display    | `<Tree />`       |   🛑   |
-|  Data Display    | `<CheckTree />`       |   🛑   |
-|  Data Display    | `<Panel />`       |   🛑   |
+|  Data Entry    | `<DateRangePicker />`  |   🛑   |
+|  Data Entry    | `<Slider />`           |   🛑   |
+|  Data Entry    | `<Uploader />`         |   🛑   |
+|   :-:       | --------------------------|   :-:   |
+|  Data Display    | `<Avatar />`         |   ✅   |
+|  Data Display    | `<Badge />`          |   ✅   |
+|  Data Display    | `<Tree />`           |   🛑   |
+|  Data Display    | `<CheckTree />`      |   🛑   |
+|  Data Display    | `<Panel />`          |   🛑   |
 |  Data Display    | `<Timeline />`       |   🛑   |
-|  Data Display    | `<Tag />`       |   🛑   |
-|  Data Display    | `<List />`       |   🛑   |
+|  Data Display    | `<Tag />;<TagGroup/>`|   ✅   |
+|  Data Display    | `<List />`           |   🛑   |
 |  Data Display    | `<Calendar />`       |   🛑   |
-|   ::      | ------------------- |   ::  |
-|  Layout    | `<Grid />`       |   🛑   |
-|  Layout    | `<FlexboxGrid />`       |   🛑   |
-|  Layout    | `<Container />`       |   ✅   |
-|   ::      | ------------------- |   ::  
-|  Utils    | `<Animation />`       |    🛑   |
+|   :-:       | --------------------------|   :-:   |
+|  Layout    | `<Grid />`                 |   🛑   |
+|  Layout    | `<FlexboxGrid />`          |   🛑   |
+|  Layout    | `<Container />`            |   ✅   |
+|   :-:       | --------------------------|   :-:  |
+|  Utils    | `<Animation />`             |    🛑  |
+|  Utils    | `<Portal />`                |    ✅  |
 ## Installation
 
 **I**. Add `bs-rsuite-ui-react` bindings as dependency 
@@ -122,19 +123,23 @@ All contributions are welcomed.
  - Put it in a separate function
  - See: https://github.com/reasonml/reason-react/blob/master/docs/component-as-prop.md
 
-**2**. What the different between ReasonReact.string and React.string?
-- They are the same (aliases)
+**2**. What the different between `ReasonReact.string` and `React.string`?
+- They are the same (aliases), prefer `React.string`
 - See: https://github.com/reasonml/reason-react/issues/406 comments
 
 **3**. How can we pass string as prop?
 
 - Use `React.string("example")` instead `"example"`
 
-**4**. What `type__` mean as `Component` prop?
+**4**. What `_type` mean as `Component` prop?
 
 - `type` is reserved in Reason/Ocaml,
 - See: https://bucklescript.github.io/docs/en/object
 and https://github.com/reasonml/reason-react/issues/475
+
+**5**. What `_open` mean as `Component` prop?
+
+- `open` is reserved in Reason/Ocaml (analogue **4**)
 
 `...to be continued`
 
