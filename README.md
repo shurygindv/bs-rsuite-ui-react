@@ -9,7 +9,7 @@
 🛑 = unimplemented<br>
 
 
-|  Type       | Component                 | Status | 
+|   Type      | Component                 | Status | 
 |   :-:       | --------------------------|   :-:  |
 |  General    | `<Button />`              |   ✅   |
 |  General    | `<Icon />`                |   ✅   |
@@ -30,7 +30,7 @@
 |  Navigation    | `<Nav />`              |   ✅   |
 |  Navigation    | `<Navbar />`           |   ✅   |
 |  Navigation    | `<Sidenav />`          |   ✅   |
-|  Navigation    | `<Steps />`            |   🛑   |
+|  Navigation    | `<Steps />`            |   ✅   |
 |  Navigation    | `<Pagination />`       |   🛑   |
 |  Navigation    | `<Breadcrumb />`       |   🛑   |
 |   :-:       | --------------------------|   :-:  |
@@ -38,7 +38,7 @@
 |  Data Entry    | `<Checkbox />`         |   ✅   |
 |  Data Entry    | `<Radio />`            |   🛑   |
 |  Data Entry    | `<Input />`            |   ✅   |
-|  Data Entry    | `<InputNumber />`      |   🛑   |
+|  Data Entry    | `<InputNumber />`      |   ✅   |
 |  Data Entry    | `<AutoComplete />`     |   🛑   |
 |  Data Entry    | `<Toggle />`           |   ✅   |
 |  Data Entry    | `<InputPicker />`      |   ✅   |
@@ -54,23 +54,24 @@
 |  Data Entry    | `<DateRangePicker />`  |   🛑   |
 |  Data Entry    | `<Slider />`           |   🛑   |
 |  Data Entry    | `<Uploader />`         |   🛑   |
-|   :-:       | --------------------------|   :-:   |
-|  Data Display    | `<Avatar />`         |   ✅   |
-|  Data Display    | `<Badge />`          |   ✅   |
-|  Data Display    | `<Tree />`           |   🛑   |
-|  Data Display    | `<CheckTree />`      |   🛑   |
-|  Data Display    | `<Panel />`          |   🛑   |
-|  Data Display    | `<Timeline />`       |   🛑   |
-|  Data Display    | `<Tag />;<TagGroup/>`|   ✅   |
-|  Data Display    | `<List />`           |   🛑   |
-|  Data Display    | `<Calendar />`       |   🛑   |
-|   :-:       | --------------------------|   :-:   |
-|  Layout    | `<Grid />`                 |   🛑   |
-|  Layout    | `<FlexboxGrid />`          |   🛑   |
-|  Layout    | `<Container />`            |   ✅   |
-|   :-:       | --------------------------|   :-:  |
-|  Utils    | `<Animation />`             |    🛑  |
-|  Utils    | `<Portal />`                |    ✅  |
+|     :-:        | -----------------------|   :-:   |
+|  Data Display  | `<Avatar />`           |   ✅   |
+|  Data Display  | `<Badge />`            |   ✅   |
+|  Data Display  | `<Tree />`             |   🛑   |
+|  Data Display  | `<CheckTree />`        |   🛑   |
+|  Data Display  | `<Panel />`            |   ✅   |
+|  Data Display  | `<Timeline />`         |   🛑   |
+|  Data Display  | `<Tag />;<TagGroup/>`  |   ✅   |
+|  Data Display  | `<List />`             |   🛑   |
+|  Data Display  | `<Calendar />`         |   ✅   |
+|   :-:          | -----------------------|   :-:   |
+|  Layout        | `<Grid />`             |   🛑   |
+|  Layout        | `<FlexboxGrid />`      |   🛑   |
+|  Layout        | `<Container />`        |   ✅   |
+|   :-:          | -----------------------|   :-:   |
+|  Utils         | `<Animation />`        |   🛑   |
+|  Utils         | `<Portal />`           |   ✅   |
+
 ## Installation
 
 **I**. Add `bs-rsuite-ui-react` bindings as dependency 
