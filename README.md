@@ -1,7 +1,75 @@
 # ReasonML bindings for  [Rsuite UI React library](https://rsuitejs.com)
 
-p.s A work in active progress!
+ [Official documentation](https://rsuitejs.com/en/components/overview)
 
+## Roadmap
+
+✅ = done<br>
+🌓 = not full support (temp) <br>
+🛑 = unimplemented<br>
+
+
+|  Type       | Component           | Status | 
+|   :-:       | ------------------- |   :-:  |
+|  General    | `<Button />`        |   ✅   |
+|  General    | `<Icon />`    |   ✅   |
+|  General    | `<Tooltip />`    |   ✅   |
+|  General    | `<Popover />`    |   ✅   |
+|  General    | `<Alert />`    |   ✅   |
+|  General    | `<Notification />`    |   🛑   |
+|  General    | `<Message />`    |   ✅   |
+|  General    | `<Loader />`    |   ✅   |
+|  General    | `<Modal />`    |   🛑   |
+|  General    | `<Drawer />`    |   🛑   |
+|  General    | `<Alert />`    |   ✅   |
+|  General    | `<Divider />`    |   ✅   |
+|  General    | `<Progress />`    |   ✅   |
+|  General    | `<Placeholder />`    |   ✅   |
+|   ::      | ------------------- |   ::  |
+|  Navigation    | `<Dropdown />`    |   ✅   |
+|  Navigation    | `<Nav />`    |   ✅   |
+|  Navigation    | `<Navbar />`       |   ✅   |
+|  Navigation    | `<Sidenav />`       |   ✅   |
+|  Navigation    | `<Steps />`        |   🛑   |
+|  Navigation    | `<Pagination />`     |   🛑   |
+|  Navigation    | `<Breadcrumb />`     |   🛑   |
+|   ::      | ------------------- |   ::  |
+|  Data Entry    | `<Form />`       |   🛑   |
+|  Data Entry    | `<Checkbox />`       |   ✅   |
+|  Data Entry    | `<Radio />`       |   🛑   |
+|  Data Entry    | `<Input />`       |   ✅   |
+|  Data Entry    | `<InputNumber />`       |   🛑   |
+|  Data Entry    | `<AutoComplete />`       |   🛑   |
+|  Data Entry    | `<Toggle />`       |   🛑   |
+|  Data Entry    | `<InputPicker />`       |   🛑   |
+|  Data Entry    | `<TagPicker />`       |   🛑   |
+|  Data Entry    | `<SelectPicker />`       |   🛑   |
+|  Data Entry    | `<CheckPicker />`       |   🛑   |
+|  Data Entry    | `<Toggle />`       |   🛑   |
+|  Data Entry    | `<TreePicker />`       |   🛑   |
+|  Data Entry    | `<CheckTreePicker />`       |   🛑   |
+|  Data Entry    | `<Cascader />`       |   🛑   |
+|  Data Entry    | `<MultiCascader />`       |   🛑   |
+|  Data Entry    | `<DatePicker />`       |   🛑   |
+|  Data Entry    | `<DateRangePicker />`       |   🛑   |
+|  Data Entry    | `<Slider />`       |   🛑   |
+|  Data Entry    | `<Uploader />`       |   🛑   |
+|   ::      | ------------------- |   ::  |
+|  Data Display    | `<Avatar />`       |   ✅   |
+|  Data Display    | `<Badge />`       |   🛑   |
+|  Data Display    | `<Tree />`       |   🛑   |
+|  Data Display    | `<CheckTree />`       |   🛑   |
+|  Data Display    | `<Panel />`       |   🛑   |
+|  Data Display    | `<Timeline />`       |   🛑   |
+|  Data Display    | `<Tag />`       |   🛑   |
+|  Data Display    | `<List />`       |   🛑   |
+|  Data Display    | `<Calendar />`       |   🛑   |
+|   ::      | ------------------- |   ::  |
+|  Layout    | `<Grid />`       |   🛑   |
+|  Layout    | `<FlexboxGrid />`       |   🛑   |
+|  Layout    | `<Container />`       |   ✅   |
+|   ::      | ------------------- |   ::  
+|  Utils    | `<Animation />`       |    🛑   |
 ## Installation
 
 **I**. Add `bs-rsuite-ui-react` bindings as dependency 
