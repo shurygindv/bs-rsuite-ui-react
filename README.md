@@ -1,6 +1,8 @@
 # ReasonML bindings for  [Rsuite UI React library](https://rsuitejs.com)
 
- [Official overview](https://rsuitejs.com/en/components/overview)
+ [Official overview](https://rsuitejs.com/en/components/overview) (bindings according it)
+ 
+ p.s It's a library from an enthusiast 🙂 
 
 ## Roadmap
 
