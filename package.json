@@ -1,14 +1,17 @@
 {
   "name": "bs-rsuite-ui-react",
-  "version": "0.2.0",
+  "version": "0.9.1",
   "description": "Reason(React) bindings for Rsuite UI library",
   "keywords": [
     "bucklescript",
     "reason",
     "ocaml",
+    "reasonreact",
     "rsuite"
   ],
+  "homepage": "https://github.com/shurygindv/bs-rsuite-ui-react",
   "repository": "https://github.com/shurygindv/bs-rsuite-ui-react",
+  "bugs": "https://github.com/shurygindv/bs-rsuite-ui-react/issues",
   "author": "Daniil Shurygin <shurygindv1@gmail.com>",
   "license": "MIT",
   "scripts": {

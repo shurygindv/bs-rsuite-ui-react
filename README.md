@@ -2,7 +2,7 @@
 
  [Official overview](https://rsuitejs.com/en/components/overview) (bindings according it)
  
- p.s It's a library from an enthusiast 🙂 
+ p.s bindings from an enthusiast 🙂 
 
 ## Roadmap
 
