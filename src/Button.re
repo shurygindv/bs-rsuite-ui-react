@@ -16,7 +16,7 @@ external make: (
         | `subtle
         | `default
         | `ghost
-      ]=?
+      ]=?,
     ~color: [@bs.string] [
         | `red
         | `orange
@@ -25,7 +25,7 @@ external make: (
         | `cyan
         | `blue
         | `violet
-      ]=?
+      ]=?,
     ~size: [@bs.string] [
       | `lg
       | `md
