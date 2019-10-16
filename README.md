@@ -9,22 +9,22 @@
 🛑 = unimplemented<br>
 
 
-|   Type         | Component                 | Status | 
-|   :-:          | --------------------------|   :-:  |
-|  General       | `<Button />`              |   ✅   |
-|  General       | `<Icon />`                |   ✅   |
-|  General       | `<Tooltip />`             |   ✅   |
-|  General       | `<Popover />;<Whisper />` |   ✅   |
-|  General       | `<Alert />`               |   ✅   |
-|  General       | `Notification module`     |   ✅   |
-|  General       | `<Message />`             |   ✅   |
-|  General       | `<Loader />`              |   ✅   |
-|  General       | `<Modal />`               |   ✅   |
-|  General       | `<Drawer />`              |   🛑   |
-|  General       | `<Alert />`               |   ✅   |
-|  General       | `<Divider />`             |   ✅   |
-|  General       | `<Progress />`            |   ✅   |
-|  General       | `<Placeholder />`         |   ✅   |
+|   Type         | Component                           | Status  | 
+|   :-:          | ------------------------------------|   :-:  |
+|  General       | `<Button />`; `<ButtonGroup />`     |   ✅   |
+|  General       | `<Icon />`; `<IconButton />`        |   ✅   |
+|  General       | `<Tooltip />`                       |   ✅   |
+|  General       | `<Popover />;<Whisper />`           |   ✅   |
+|  General       | `<Alert />`                         |   ✅   |
+|  General       | `Notification module`               |   ✅   |
+|  General       | `<Message />`                       |   ✅   |
+|  General       | `<Loader />`                        |   ✅   |
+|  General       | `<Modal />`                         |   ✅   |
+|  General       | `<Drawer />`                        |   🛑   |
+|  General       | `<Alert />`                         |   ✅   |
+|  General       | `<Divider />`                       |   ✅   |
+|  General       | `<Progress />`                      |   ✅   |
+|  General       | `<Placeholder />`                   |   ✅   |
 |   :-:          | --------------------------|        |
 |  Navigation    | `<Dropdown />`            |   ✅   |
 |  Navigation    | `<Nav />`                 |   ✅   |
@@ -120,7 +120,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some `examples`
  
  RsuiteUi.Notification.success(RsuiteUi.Notification.Props.make(
    ~title: React.string("I'm title"),
-   ~description: React.string("I'm title"),
+   ~description: React.string("I'm desc"),
  ));
  ...
 ```
@@ -133,16 +133,19 @@ All bindings are in `RsuiteUi` namespace, let's try! Some `examples`
          {React.string("Header")}
       </RsuiteUi.Modal.Header>
       
-      <RsuiteUi.Modal.Title>
-       {React.string("Title")}
+       <RsuiteUi.Modal.Title>
+         {React.string("Title")}
+      </RsuiteUi.Modal.Title>
+      
+       <RsuiteUi.Modal.Body>
+        {React.string("Body")}
       </RsuiteUi.Modal.Body>
       
       <RsuiteUi.Modal.Footer>
        {React.string("Footer")}
-      </RsuiteUi.Modal.Body>
+      </RsuiteUi.Modal.Footer>
   </RsuiteUi.Modal>
 ```
-The concept is the same as and in React JavaScript
 
 ## Contributions
 
