@@ -1,5 +1,5 @@
 {
-  "name": "bs-rsuite-ui-react",
+  "name": "@sdv-studio/bs-rsuite-ui-react",
   "version": "0.9.1",
   "description": "Reason(React) bindings for Rsuite UI library",
   "keywords": [
@@ -10,8 +10,13 @@
     "rsuite"
   ],
   "homepage": "https://github.com/shurygindv/bs-rsuite-ui-react",
-  "repository": "https://github.com/shurygindv/bs-rsuite-ui-react",
-  "bugs": "https://github.com/shurygindv/bs-rsuite-ui-react/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shurygindv/bs-rsuite-ui-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shurygindv/bs-rsuite-ui-react/issues"
+  },
   "author": "Daniil Shurygin <shurygindv1@gmail.com>",
   "license": "MIT",
   "scripts": {
