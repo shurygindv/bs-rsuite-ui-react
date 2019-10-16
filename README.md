@@ -1,5 +1,7 @@
 # ReasonML bindings for  [Rsuite UI React library](https://rsuitejs.com)
 
+[![npm version](https://badge.fury.io/js/%40sdv-studio%2Fbs-rsuite-ui-react.svg)](https://badge.fury.io/js/%40sdv-studio%2Fbs-rsuite-ui-react)
+
  [Official overview](https://rsuitejs.com/en/components/overview) (bindings according it)
  
  p.s bindings from an enthusiast 🙂 
@@ -81,7 +83,7 @@
 ```
 yarn add "https://github.com/shurygindv/bs-rsuite-ui-react.git"
 or
-yarn add bs-rsuite-ui-react
+yarn add @sdv-studio/bs-rsuite-ui-react
 ```
 
 **II**. Also we need to say `bsb`: heey, look! Seems, `bs-rsuite-ui-react` perfectly complements you, let's add it to `bs-dependencies
