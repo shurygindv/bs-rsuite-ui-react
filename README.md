@@ -9,51 +9,51 @@
 🛑 = unimplemented<br>
 
 
-|   Type      | Component                 | Status | 
-|   :-:       | --------------------------|   :-:  |
-|  General    | `<Button />`              |   ✅   |
-|  General    | `<Icon />`                |   ✅   |
-|  General    | `<Tooltip />`             |   ✅   |
-|  General    | `<Popover />;<Whisper />` |   ✅   |
-|  General    | `<Alert />`               |   ✅   |
-|  General    | `<Notification />`        |   🛑   |
-|  General    | `<Message />`             |   ✅   |
-|  General    | `<Loader />`              |   ✅   |
-|  General    | `<Modal />`               |   🛑   |
-|  General    | `<Drawer />`              |   🛑   |
-|  General    | `<Alert />`               |   ✅   |
-|  General    | `<Divider />`             |   ✅   |
-|  General    | `<Progress />`            |   ✅   |
-|  General    | `<Placeholder />`         |   ✅   |
-|   :-:       | --------------------------|        |
-|  Navigation    | `<Dropdown />`         |   ✅   |
-|  Navigation    | `<Nav />`              |   ✅   |
-|  Navigation    | `<Navbar />`           |   ✅   |
-|  Navigation    | `<Sidenav />`          |   ✅   |
-|  Navigation    | `<Steps />`            |   ✅   |
-|  Navigation    | `<Pagination />`       |   🛑   |
-|  Navigation    | `<Breadcrumb />`       |   🛑   |
-|   :-:       | --------------------------|   :-:  |
-|  Data Entry    | `<Form />`             |   🛑   |
-|  Data Entry    | `<Checkbox />`         |   ✅   |
-|  Data Entry    | `<Radio />`            |   🛑   |
-|  Data Entry    | `<Input />`            |   ✅   |
-|  Data Entry    | `<InputNumber />`      |   ✅   |
-|  Data Entry    | `<AutoComplete />`     |   🛑   |
-|  Data Entry    | `<Toggle />`           |   ✅   |
-|  Data Entry    | `<InputPicker />`      |   ✅   |
-|  Data Entry    | `<TagPicker />`        |   ✅   |
-|  Data Entry    | `<SelectPicker />`     |   ✅   |
-|  Data Entry    | `<CheckPicker />`      |   ✅   |
-|  Data Entry    | `<Toggle />`           |   ✅   |
-|  Data Entry    | `<TreePicker />`       |   ✅   |
-|  Data Entry    | `<CheckTreePicker />`  |   ✅   |
-|  Data Entry    | `<Cascader />`         |   ✅   |
-|  Data Entry    | `<MultiCascader />`    |   ✅   |
-|  Data Entry    | `<DatePicker />`       |   🛑   |
-|  Data Entry    | `<DateRangePicker />`  |   🛑   |
-|  Data Entry    | `<Slider />`           |   🛑   |
-|  Data Entry    | `<Uploader />`         |   🛑   |
+|   Type         | Component                 | Status | 
+|   :-:          | --------------------------|   :-:  |
+|  General       | `<Button />`              |   ✅   |
+|  General       | `<Icon />`                |   ✅   |
+|  General       | `<Tooltip />`             |   ✅   |
+|  General       | `<Popover />;<Whisper />` |   ✅   |
+|  General       | `<Alert />`               |   ✅   |
+|  General       | `Notification module`     |   ✅   |
+|  General       | `<Message />`             |   ✅   |
+|  General       | `<Loader />`              |   ✅   |
+|  General       | `<Modal />`               |   ✅   |
+|  General       | `<Drawer />`              |   🛑   |
+|  General       | `<Alert />`               |   ✅   |
+|  General       | `<Divider />`             |   ✅   |
+|  General       | `<Progress />`            |   ✅   |
+|  General       | `<Placeholder />`         |   ✅   |
+|   :-:          | --------------------------|        |
+|  Navigation    | `<Dropdown />`            |   ✅   |
+|  Navigation    | `<Nav />`                 |   ✅   |
+|  Navigation    | `<Navbar />`              |   ✅   |
+|  Navigation    | `<Sidenav />`             |   ✅   |
+|  Navigation    | `<Steps />`               |   ✅   |
+|  Navigation    | `<Pagination />`          |   🛑   |
+|  Navigation    | `<Breadcrumb />`          |   🛑   |
+|   :-:          | --------------------------|   :-:  |
+|  Data Entry    | `<Form />`                |   🛑   |
+|  Data Entry    | `<Checkbox />`            |   ✅   |
+|  Data Entry    | `<Radio />`               |   🛑   |
+|  Data Entry    | `<Input />`               |   ✅   |
+|  Data Entry    | `<InputNumber />`         |   ✅   |
+|  Data Entry    | `<AutoComplete />`        |   🛑   |
+|  Data Entry    | `<Toggle />`              |   ✅   |
+|  Data Entry    | `<InputPicker />`         |   ✅   |
+|  Data Entry    | `<TagPicker />`           |   ✅   |
+|  Data Entry    | `<SelectPicker />`        |   ✅   |
+|  Data Entry    | `<CheckPicker />`         |   ✅   |
+|  Data Entry    | `<Toggle />`              |   ✅   |
+|  Data Entry    | `<TreePicker />`          |   ✅   |
+|  Data Entry    | `<CheckTreePicker />`     |   ✅   |
+|  Data Entry    | `<Cascader />`            |   ✅   |
+|  Data Entry    | `<MultiCascader />`       |   ✅   |
+|  Data Entry    | `<DatePicker />`          |   🛑   |
+|  Data Entry    | `<DateRangePicker />`     |   🛑   |
+|  Data Entry    | `<Slider />`              |   🛑   |
+|  Data Entry    | `<Uploader />`            |   🛑   |
 |     :-:        | -----------------------|   :-:   |
 |  Data Display  | `<Avatar />`           |   ✅   |
 |  Data Display  | `<Badge />`            |   ✅   |
@@ -110,12 +110,43 @@ or as plain `CSS`
 
 ## Usage
 
-TODO
+All bindings are in `RsuiteUi` namespace, let's try! Some `examples`
+
+**Notification**
+
+```reason 
+ RsuiteUi.Notification._open(props); // props is RsuiteUi.Notification.Props.t
+ RsuiteUi.Notification.closeAll();
+ 
+ RsuiteUi.Notification.success(RsuiteUi.Notification.Props.make(
+   ~title: React.string("I'm title"),
+   ~description: React.string("I'm title"),
+ ));
+ ...
+```
+
+**Modal**
+
+```reason 
+  <RsuiteUi.Modal show={true}>
+      <RsuiteUi.Modal.Header>
+         {React.string("Header")}
+      </RsuiteUi.Modal.Header>
+      
+      <RsuiteUi.Modal.Title>
+       {React.string("Title")}
+      </RsuiteUi.Modal.Body>
+      
+      <RsuiteUi.Modal.Footer>
+       {React.string("Footer")}
+      </RsuiteUi.Modal.Body>
+  </RsuiteUi.Modal>
+```
+The concept is the same as and in React JavaScript
 
 ## Contributions
 
-It would be great! 
-Make our world better!
+It would be great, make our world better!
 All contributions are welcomed.
 
 ## FAQ (just to save time...)
@@ -140,7 +171,7 @@ and https://github.com/reasonml/reason-react/issues/475
 
 **5**. What `_open` mean as `Component` prop?
 
-- `open` is reserved in Reason/Ocaml (analogue **4**)
+- `open` is reserved... (analogue **4**)
 
 `...to be continued`
 
