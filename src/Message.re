@@ -2,6 +2,7 @@
 
 [@bs.module "rsuite"] [@react.component]
 external make: (
+  ~children: React.element=?,
   ~classPrefix: string=?,
   ~closable: bool=?,
   ~showIcon: bool=?,
@@ -10,7 +11,7 @@ external make: (
   ~description: React.element=?,
   ~title: React.element=?,
   ~onClose: unit => unit=?,
-  ~type__: [@bs.string] [
+  ~_type: [@bs.string] [
     | `info
     | `warning
     | `error
