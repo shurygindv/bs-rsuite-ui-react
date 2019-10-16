@@ -78,6 +78,8 @@
 
 ```
 yarn add "https://github.com/shurygindv/bs-rsuite-ui-react.git"
+or
+yarn add bs-rsuite-ui-react
 ```
 
 **II**. Also we need to say `bsb`: heey, look! Seems, `bs-rsuite-ui-react` perfectly complements you, let's add it to `bs-dependencies
