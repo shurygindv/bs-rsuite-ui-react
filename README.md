@@ -77,12 +77,12 @@
 |  Data Display  | `<List />`                          |   🛑   |
 |  Data Display  | `<Calendar />`                      |   ✅   |
 |   :-:          | ------------------------------------|   :-:   |
-|  Layout        | `<Grid />`             |   🛑   |
-|  Layout        | `<FlexboxGrid />`      |   🛑   |
-|  Layout        | `<Container />`        |   ✅   |
-|   :-:          | -----------------------|   :-:   |
-|  Utils         | `<Animation />`        |   🛑   |
-|  Utils         | `<Portal />`           |   ✅   |
+|  Layout        | `<Grid />`; `<Row />`; `<Col />`    |   ✅   |
+|  Layout        | `<FlexboxGrid />`                   |   ✅   |
+|  Layout        | `<Container />`                     |   ✅   |
+|   :-:          | ------------------------------------|   :-:   |
+|  Utils         | `<Animation />`                     |   🛑   |
+|  Utils         | `<Portal />`                        |   ✅   |
 
 ## Installation
 
