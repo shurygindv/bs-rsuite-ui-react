@@ -6,6 +6,14 @@
  
  p.s bindings from an enthusiast 🙂 
 
+
+## Plans
+
+1. Cover all components **in progress**
+2. Avoid type duplications, create common.re module for types (to reuse)
+3. Check and fix some to-do`s
+
+
 ## Roadmap
 
 ✅ = done<br>
