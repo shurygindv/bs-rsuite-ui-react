@@ -1,6 +1,6 @@
 {
   "name": "@sdv-studio/bs-rsuite-ui-react",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "Reason(React) bindings for Rsuite UI library",
   "keywords": [
     "bucklescript",
