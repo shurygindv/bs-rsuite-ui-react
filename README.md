@@ -19,7 +19,7 @@
 |  General       | `<Icon />`; `<IconButton />`        |   ✅   |
 |  General       | `<Tooltip />`                       |   ✅   |
 |  General       | `<Popover />;<Whisper />`           |   ✅   |
-|  General       | `<Alert />`                         |   ✅   |
+|  General       | `Alert module`                      |   ✅   |
 |  General       | `Notification module`               |   ✅   |
 |  General       | `<Message />`                       |   ✅   |
 |  General       | `<Loader />`                        |   ✅   |
