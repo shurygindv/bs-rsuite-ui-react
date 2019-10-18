@@ -1,10 +1,4 @@
 
-type dataItemType = {
-    value: string,
-    label: React.element,
-    children: array(dataItemType),
-    groupBy: string
-  };
   
   [@bs.module "rsuite"] [@react.component]
   external make:
@@ -12,7 +6,7 @@ type dataItemType = {
       ~style: ReactDOMRe.Style.t=?,
       ~menuStyle: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
-      ~cacheData: array(dataItemType)=?,
+      ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
       ~classPrefix: string=?,
       ~block: bool=?,
       ~cleanable: bool=?,
@@ -21,7 +15,7 @@ type dataItemType = {
       ~disabled: bool=?,
       ~preventOverflow: bool=?,
       ~searchable: bool=?,
-      ~data: array(dataItemType)=?,
+      ~data: array(RsuiteTypes.DataItemType.t)=?,
       ~defaultValue: string=?,
       ~disabledItemValues: string=?,
       ~groupBy: string=?,
@@ -34,7 +28,7 @@ type dataItemType = {
       ~onOpen: unit => unit=?,
       ~onClose: unit => unit=?,
       ~onSearch: (string, ReactEvent.Form.t) => unit=?,
-      ~onSelect: (string, dataItemType, ReactEvent.Synthetic.t) => unit=?,
+      ~onSelect: (string, RsuiteTypes.DataItemType.t, ReactEvent.Synthetic.t) => unit=?,
       ~onClean: (ReactEvent.Synthetic.t) => unit=?,
       ~onGroupTitleClick: (ReactEvent.Synthetic.t) => unit=?,
       ~placeholder: React.element=?,
@@ -56,9 +50,9 @@ type dataItemType = {
         | `bottomEnd
       ]=?,
       ~renderMenu: React.element => React.element=?,
-      ~renderMenuGroup: (React.element, dataItemType) => React.element=?,
-      ~renderMenuItem: (React.element, dataItemType) => React.element=?,
-      ~renderValue: (array(string), array(dataItemType), React.element) => React.element=?,
+      ~renderMenuGroup: (React.element, RsuiteTypes.DataItemType.t) => React.element=?,
+      ~renderMenuItem: (React.element, RsuiteTypes.DataItemType.t) => React.element=?,
+      ~renderValue: (array(string), array(RsuiteTypes.DataItemType.t), React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~sort: bool => (string, string) => int=?, // TODO
       ~toggleComponentClass: unit => React.element=?,

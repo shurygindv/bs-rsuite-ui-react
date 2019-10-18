@@ -1,10 +1,4 @@
 
-type dataItemType = {
-    value: string,
-    label: React.element,
-    children: array(dataItemType),
-    groupBy: string
-  };
   
   [@bs.module "rsuite"] [@react.component]
   external make:
@@ -27,7 +21,7 @@ type dataItemType = {
       ~virtualized: bool=?,
       ~preventOverflow: bool=?,
       ~container: Dom.element=?, // TODO
-      ~data: array(dataItemType)=?,
+      ~data: array(RsuiteTypes.DataItemType.t)=?,
       ~uncheckableItemValues: array(string)=?,
       ~defaultValue: string=?,
       ~defaultExpandAll: bool=?,
@@ -39,12 +33,12 @@ type dataItemType = {
       ~value: array(string)=?,
       ~valueKey: string=?,
       ~menuClassName: string=?,
-      ~onExpand: (array(string), dataItemType) => unit=?, // TODO: misunderstanding
+      ~onExpand: (array(string), RsuiteTypes.DataItemType.t) => unit=?, // TODO: misunderstanding
       ~onClose: unit => unit=?,
       ~onChange: (array(string), ReactEvent.Synthetic.t) => unit=?,
       ~onOpen: unit => unit=?,
       ~onSearch: (string, ReactEvent.Form.t) => unit=?,
-      ~onSelect: (dataItemType, string, ReactEvent.Synthetic.t) => unit=?,
+      ~onSelect: (RsuiteTypes.DataItemType.t, string, ReactEvent.Synthetic.t) => unit=?,
       ~onClean: (ReactEvent.Synthetic.t) => unit=?,
       ~placeholder: React.element=?,
       ~placement: [@bs.string] [
@@ -66,8 +60,8 @@ type dataItemType = {
       ]=?,
       ~renderMenu: React.element => React.element=?,
       ~renderTreeIcon: (array(int)) => React.element=?, // TODO: check
-      ~renderTreeNode: (array(dataItemType)) => React.element=?,
-      ~renderValue: (array(string), dataItemType, React.element) => React.element=?,
+      ~renderTreeNode: (array(RsuiteTypes.DataItemType.t)) => React.element=?,
+      ~renderValue: (array(string), RsuiteTypes.DataItemType.t, React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~toggleComponentClass: unit => React.element=?,
       ~size: [@bs.string] [

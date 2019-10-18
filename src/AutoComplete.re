@@ -1,11 +1,3 @@
-
-type dataItemType = {
-  value: string,
-  label: React.element,
-  children: array(dataItemType),
-  groupBy: string
-};
-
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
@@ -17,9 +9,9 @@ external make:
     ~disabled: bool=?,
     ~onChange: (string, ReactEvent.Synthetic.t) => unit=?,
     ~onClose: unit => unit=?,
-    ~onSelect: (dataItemType, ReactEvent.Synthetic.t) => unit=?,
+    ~onSelect: (RsuiteTypes.DataItemType.t, ReactEvent.Synthetic.t) => unit=?,
     ~placeholder: React.element=?,
-    ~renderItem: (React.element, dataItemType) => React.element=?,
+    ~renderItem: (React.element, RsuiteTypes.DataItemType.t) => React.element=?,
     ~selectOnEnter: bool=?,
     ~value: string=?,
   ) =>
