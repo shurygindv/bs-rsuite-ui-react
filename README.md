@@ -177,7 +177,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
   </RsuiteUi.Modal>
 ```
 
-# Caveats
+## Caveats
 
 **I**. Next components: `<MultiCascader />`, `<Cascader />`, `<DatePicker />`, `Notification module` have **_open** prop instead **open**
 
@@ -192,7 +192,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
    Notification._open(...); // instead Notification.open()
 ```
 
-**II**. `<FlexboxGrid />` component has prop `justify` in specific cases we would be to use **end** value, but we use **end_** instead
+**II**. Similar situation with `<FlexboxGrid />`; Sometimes we would be to use prop `justify` with **end** value, but we should use **end_** instead
  
 **Example**
 
