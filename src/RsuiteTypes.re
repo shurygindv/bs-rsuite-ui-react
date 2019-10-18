@@ -40,3 +40,24 @@ module FileType = {
 
     let make = t;
 }
+
+module Locale = {
+    [@bs.deriving abstract]
+    type t = {
+        sunday: string,
+        monday: string,
+        tuesday: string,
+        wednesday: string,
+        thursday: string,
+        friday: string,
+        saturday: string,
+        ok: string,
+        today: string,
+        yesterday: string,
+        hours: string,
+        minutes: string,
+        seconds: string
+    };
+
+    let make = t;
+}
