@@ -4,7 +4,7 @@ external make:
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     ~classPrefix: string=?,
-    ~data: array(dateItemType), //  // todo: research bs.obj label data does not support [@bs.unwrap] 
+    ~data: array(RsuiteTypes.DataItemType.t), //  // todo: research bs.obj label data does not support [@bs.unwrap] 
     ~defaultValue: string=?,
     ~disabled: bool=?,
     ~onChange: (string, ReactEvent.Synthetic.t) => unit=?,
