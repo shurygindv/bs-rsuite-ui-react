@@ -51,7 +51,7 @@
 |  Data Entry    | `<Radio />`; `<RadioGroup />`       |   ✅   |
 |  Data Entry    | `<Input />`                         |   ✅   |
 |  Data Entry    | `<InputNumber />`                   |   ✅   |
-|  Data Entry    | `<AutoComplete />`                  |   🛑   |
+|  Data Entry    | `<AutoComplete />`                  |   ✅   |
 |  Data Entry    | `<Toggle />`                        |   ✅   |
 |  Data Entry    | `<InputPicker />`                   |   ✅   |
 |  Data Entry    | `<TagPicker />`                     |   ✅   |
@@ -64,7 +64,7 @@
 |  Data Entry    | `<MultiCascader />`                 |   ✅   |
 |  Data Entry    | `<DatePicker />`                    |   🛑   |
 |  Data Entry    | `<DateRangePicker />`               |   🛑   |
-|  Data Entry    | `<Slider />`                        |   🛑   |
+|  Data Entry    | `<Slider />`                        |   ✅   |
 |  Data Entry    | `<Uploader />`                      |   🛑   |
 |     :-:        | ------------------------------------|   :-:   |
 |  Data Display  | `<Avatar />`                        |   ✅   |
@@ -72,7 +72,7 @@
 |  Data Display  | `<Tree />`                          |   🛑   |
 |  Data Display  | `<CheckTree />`                     |   🛑   |
 |  Data Display  | `<Panel />`                         |   ✅   |
-|  Data Display  | `<Timeline />`                      |   🛑   |
+|  Data Display  | `<Timeline />`                      |   ✅   |
 |  Data Display  | `<Tag />;<TagGroup/>`               |   ✅   |
 |  Data Display  | `<List />`                          |   🛑   |
 |  Data Display  | `<Calendar />`                      |   ✅   |
