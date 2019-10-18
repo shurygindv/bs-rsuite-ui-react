@@ -139,6 +139,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
  RsuiteUi.Notification.success(RsuiteUi.Notification.Props.make(
    ~title = React.string("I'm title"),
    ~description = React.string("I'm desc"),
+   ()
  ));
 ```
 
@@ -218,7 +219,7 @@ All contributions are welcomed.
 - They are the same (aliases), prefer `React.string`
 - See: https://github.com/reasonml/reason-react/issues/406 comments
 
-**3**. How can we pass string as prop?
+**3**. How can we pass string as child?
 
 - Use `React.string("example")` instead `"example"`
 
