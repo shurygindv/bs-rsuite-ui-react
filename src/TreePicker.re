@@ -2,6 +2,8 @@
   [@bs.module "rsuite"] [@react.component]
   external make:
     (
+      ~data: array(RsuiteTypes.DataItemType.t),
+
       ~style: ReactDOMRe.Style.t=?,
       ~menuStyle: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
@@ -20,7 +22,6 @@
       ~_open: bool=?,
       ~preventOverflow: bool=?,
       ~container: Dom.element=?, // TODO
-      ~data: array(RsuiteTypes.DataItemType.t)=?,
       ~defaultValue: string=?,
       ~defaultExpandAll: bool=?,
       ~defaultExpandItemValues: string=?,

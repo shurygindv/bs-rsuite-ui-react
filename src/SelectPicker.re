@@ -3,6 +3,8 @@
   [@bs.module "rsuite"] [@react.component]
   external make:
     (
+      ~data: array(RsuiteTypes.DataItemType.t),
+
       ~style: ReactDOMRe.Style.t=?,
       ~menuStyle: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
@@ -18,7 +20,6 @@
       ~searchable: bool=?,
       ~container: Dom.element=?, // TODO
       ~preventOverflow: bool=?,
-      ~data: array(RsuiteTypes.DataItemType.t)=?,
       ~defaultValue: string=?,
       ~disabledItemValues: string=?,
       ~groupBy: string=?,
