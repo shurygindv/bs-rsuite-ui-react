@@ -124,7 +124,7 @@ or as plain `CSS`
 
 ## Usage
 
-All bindings are in `RsuiteUi` namespace, let's try! Some `examples`
+All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
 
 **Notification**
 
@@ -133,11 +133,22 @@ All bindings are in `RsuiteUi` namespace, let's try! Some `examples`
  RsuiteUi.Notification.closeAll();
  
  RsuiteUi.Notification.success(RsuiteUi.Notification.Props.make(
-   ~title: React.string("I'm title"),
-   ~description: React.string("I'm desc"),
+   ~title = React.string("I'm title"),
+   ~description = React.string("I'm desc"),
  ));
- ...
 ```
+
+**CheckPicker**
+
+```reason 
+ let item = RsuiteUi.RsuiteTypes.DataItemType.make(
+  ~value = "value",
+  ~label = React.string("value"),
+ );
+ 
+ <RsuiteUi.CheckPicker data=[|item|]] />
+```
+
 
 **Modal**
 
