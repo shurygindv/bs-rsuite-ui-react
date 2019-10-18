@@ -2,7 +2,7 @@
 type dataItemType = {
     value: string,
     label: React.element,
-    children: list(dataItemType),
+    children: array(dataItemType),
     groupBy: string
   };
   
@@ -17,7 +17,7 @@ type dataItemType = {
         | `default
         | `subtle
       ]=?,
-      ~cacheData: list(dataItemType)=?,
+      ~cacheData: array(dataItemType)=?,
       ~classPrefix: string=?,
       ~block: bool=?,
       ~cleanable: bool=?,
@@ -27,7 +27,7 @@ type dataItemType = {
       ~_open: bool=?,
       ~preventOverflow: bool=?,
       ~container: Dom.element=?, // TODO
-      ~data: list(dataItemType)=?,
+      ~data: array(dataItemType)=?,
       ~defaultValue: string=?,
       ~defaultExpandAll: bool=?,
       ~defaultExpandItemValues: string=?,
@@ -41,7 +41,7 @@ type dataItemType = {
       ~valueKey: string=?,
       ~menuClassName: string=?,
       ~maxHeight: int=?,
-      ~onExpand: (list(string), dataItemType) => unit=?, // TODO: misunderstanding
+      ~onExpand: (array(string), dataItemType) => unit=?, // TODO: misunderstanding
       ~onClose: unit => unit=?,
       ~onChange: (string, ReactEvent.Synthetic.t) => unit=?,
       ~onOpen: unit => unit=?,

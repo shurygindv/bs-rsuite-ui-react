@@ -3,7 +3,7 @@
 external make: (
   ~children: React.element=?,
   ~style: ReactDOMRe.Style.t=?,
-  ~defaultValue: list(string)=?,
+  ~defaultValue: array(string)=?,
   ~name: string=?,
   ~value: string=?,
   ~inline: bool=?,

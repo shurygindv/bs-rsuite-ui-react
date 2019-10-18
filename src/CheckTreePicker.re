@@ -2,7 +2,7 @@
 type dataItemType = {
     value: string,
     label: React.element,
-    children: list(dataItemType),
+    children: array(dataItemType),
     groupBy: string
   };
   
@@ -27,21 +27,21 @@ type dataItemType = {
       ~virtualized: bool=?,
       ~preventOverflow: bool=?,
       ~container: Dom.element=?, // TODO
-      ~data: list(dataItemType)=?,
-      ~uncheckableItemValues: list(string)=?,
+      ~data: array(dataItemType)=?,
+      ~uncheckableItemValues: array(string)=?,
       ~defaultValue: string=?,
       ~defaultExpandAll: bool=?,
       ~defaultExpandItemValues: string=?,
-      ~disabledItemValues: list(string)=?,
-      ~expandItemValues: list(string)=?, // TODO
+      ~disabledItemValues: array(string)=?,
+      ~expandItemValues: array(string)=?, // TODO
       ~labelKey: string=?,
       ~height: int=?,
-      ~value: list(string)=?,
+      ~value: array(string)=?,
       ~valueKey: string=?,
       ~menuClassName: string=?,
-      ~onExpand: (list(string), dataItemType) => unit=?, // TODO: misunderstanding
+      ~onExpand: (array(string), dataItemType) => unit=?, // TODO: misunderstanding
       ~onClose: unit => unit=?,
-      ~onChange: (list(string), ReactEvent.Synthetic.t) => unit=?,
+      ~onChange: (array(string), ReactEvent.Synthetic.t) => unit=?,
       ~onOpen: unit => unit=?,
       ~onSearch: (string, ReactEvent.Form.t) => unit=?,
       ~onSelect: (dataItemType, string, ReactEvent.Synthetic.t) => unit=?,
@@ -65,9 +65,9 @@ type dataItemType = {
         | `bottomEnd
       ]=?,
       ~renderMenu: React.element => React.element=?,
-      ~renderTreeIcon: (list(int)) => React.element=?, // TODO: check
-      ~renderTreeNode: (list(dataItemType)) => React.element=?,
-      ~renderValue: (list(string), dataItemType, React.element) => React.element=?,
+      ~renderTreeIcon: (array(int)) => React.element=?, // TODO: check
+      ~renderTreeNode: (array(dataItemType)) => React.element=?,
+      ~renderValue: (array(string), dataItemType, React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~toggleComponentClass: unit => React.element=?,
       ~size: [@bs.string] [

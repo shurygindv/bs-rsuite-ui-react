@@ -2,7 +2,7 @@
 type dataItemType = {
     value: string,
     label: React.element,
-    children: list(dataItemType),
+    children: array(dataItemType),
     groupBy: string
   };
   
@@ -20,7 +20,7 @@ type dataItemType = {
       ~disabled: bool=?,
       ~preventOverflow: bool=?,
       ~searchable: bool=?,
-      ~data: list(dataItemType)=?,
+      ~data: array(dataItemType)=?,
       ~defaultValue: string=?,
       ~disabledItemValues: string=?,
       ~groupBy: string=?,

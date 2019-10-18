@@ -2,7 +2,7 @@
 type dataItemType = {
     value: string,
     label: React.element,
-    children: list(dataItemType),
+    children: array(dataItemType),
     groupBy: string
   };
   
@@ -16,7 +16,7 @@ type dataItemType = {
         | `default
         | `subtle
       ]=?,
-      ~cacheData: list(dataItemType)=?,
+      ~cacheData: array(dataItemType)=?,
       ~classPrefix: string=?,
       ~block: bool=?,
       ~cleanable: bool=?,
@@ -24,7 +24,7 @@ type dataItemType = {
       ~searchable: bool=?,
       ~container: Dom.element=?, // TODO
       ~preventOverflow: bool=?,
-      ~data: list(dataItemType)=?,
+      ~data: array(dataItemType)=?,
       ~defaultValue: string=?,
       ~disabledItemValues: string=?,
       ~groupBy: string=?,

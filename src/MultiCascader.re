@@ -2,7 +2,7 @@
 type dataItemType = {
     value: string,
     label: React.element,
-    children: list(dataItemType),
+    children: array(dataItemType),
     groupBy: string
   };
   
@@ -17,7 +17,7 @@ type dataItemType = {
         | `default
         | `subtle
       ]=?,
-      ~cacheData: list(dataItemType)=?,
+      ~cacheData: array(dataItemType)=?,
       ~classPrefix: string=?,
       ~block: bool=?,
       ~cleanable: bool=?,
@@ -26,11 +26,11 @@ type dataItemType = {
       ~_open: bool=?,
       ~preventOverflow: bool=?,
       ~container: Dom.element=?, // TODO
-      ~data: list(dataItemType)=?,
+      ~data: array(dataItemType)=?,
       ~defaultValue: string=?,
       ~defaultOpen: bool=?,
       ~disabledItemValues: string=?,
-      ~uncheckableItemValues: list(string)=?,
+      ~uncheckableItemValues: array(string)=?,
       ~labelKey: string=?,
       ~value: string=?,
       ~menuHeight: int=?,
@@ -38,10 +38,10 @@ type dataItemType = {
       ~height: int=?,
       ~valueKey: string=?,
       ~onClose: unit => unit=?,
-      ~onChange: (list(string), ReactEvent.Synthetic.t) => unit=?,
+      ~onChange: (array(string), ReactEvent.Synthetic.t) => unit=?,
       ~onOpen: unit => unit=?,
       ~onSearch: (string, ReactEvent.Form.t) => unit=?,
-      ~onSelect: (dataItemType, list(string), ReactEvent.Synthetic.t) => unit=?, // TODO
+      ~onSelect: (dataItemType, array(string), ReactEvent.Synthetic.t) => unit=?, // TODO
       ~onClean: (ReactEvent.Synthetic.t) => unit=?,
       ~onGroupTitleClick: (ReactEvent.Synthetic.t) => unit=?,
       ~placeholder: React.element=?,
@@ -62,9 +62,9 @@ type dataItemType = {
         | `bottomStart
         | `bottomEnd
       ]=?,
-      ~renderMenu: (list(string), React.element, Dom.element) => React.element=?, // TODO: check `Object type
+      ~renderMenu: (array(string), React.element, Dom.element) => React.element=?, // TODO: check `Object type
       ~renderMenuItem: (React.element, dataItemType) => React.element=?,
-      ~renderValue: (string, list(string), React.element) => React.element=?,
+      ~renderValue: (string, array(string), React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~toggleComponentClass: unit => React.element=?,
       ~size: [@bs.string] [

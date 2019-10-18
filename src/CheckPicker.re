@@ -2,7 +2,7 @@
 type dataItemType = {
     value: string,
     label: React.element,
-    children: list(dataItemType),
+    children: array(dataItemType),
     groupBy: string
   };
   
@@ -16,7 +16,7 @@ type dataItemType = {
         | `default
         | `subtle
       ]=?,
-      ~cacheData: list(dataItemType)=?,
+      ~cacheData: array(dataItemType)=?,
       ~classPrefix: string=?,
       ~block: bool=?,
       ~cleanable: bool=?,
@@ -25,7 +25,7 @@ type dataItemType = {
       ~sticky: bool=?,
       ~container: Dom.element=?, // TODO
       ~preventOverflow: bool=?,
-      ~data: list(dataItemType)=?,
+      ~data: array(dataItemType)=?,
       ~defaultValue: string=?,
       ~disabledItemValues: string=?,
       ~groupBy: string=?,
@@ -62,7 +62,7 @@ type dataItemType = {
       ~renderMenu: React.element => React.element=?,
       ~renderMenuGroup: (React.element, dataItemType) => React.element=?,
       ~renderMenuItem: (React.element, dataItemType) => React.element=?,
-      ~renderValue: (list(string), list(dataItemType), React.element) => React.element=?,
+      ~renderValue: (array(string), array(dataItemType), React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~sort: bool => (string, string) => int=?, // TODO
       ~toggleComponentClass: unit => React.element=?,
