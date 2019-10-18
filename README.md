@@ -46,7 +46,11 @@
 |  Navigation    | `<Pagination />`                    |   ✅   |
 |  Navigation    | `<Breadcrumb />`                    |   ✅   |
 |   :-:          | ------------------------------------|   :-:  |
-|  Data Entry    | `<Form />`                          |   🛑   |
+|  Data Entry    | `<Form />`                          |   🌓   |
+|  Data Entry    | `<ControlLabel />`                  |   ✅   |
+|  Data Entry    | `<FormGroup />`                     |   ✅   |
+|  Data Entry    | `<FormControl />`                   |   ✅   |
+|  Data Entry    | `<HelpBlock />`                     |   ✅   |
 |  Data Entry    | `<Checkbox />`                      |   ✅   |
 |  Data Entry    | `<Radio />`; `<RadioGroup />`       |   ✅   |
 |  Data Entry    | `<Input />`                         |   ✅   |
@@ -62,7 +66,7 @@
 |  Data Entry    | `<CheckTreePicker />`               |   ✅   |
 |  Data Entry    | `<Cascader />`                      |   ✅   |
 |  Data Entry    | `<MultiCascader />`                 |   ✅   |
-|  Data Entry    | `<DatePicker />`                    |   🛑   |
+|  Data Entry    | `<DatePicker />`                    |   ✅   |
 |  Data Entry    | `<DateRangePicker />`               |   🛑   |
 |  Data Entry    | `<Slider />`                        |   ✅   |
 |  Data Entry    | `<Uploader />`                      |   🛑   |
