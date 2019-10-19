@@ -2,10 +2,12 @@
 external make:
   (
     ~style: ReactDOMRe.Style.t=?,
-    ~menuStyle: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
-    ~activeKey: string=?,
     ~classPrefix: string=?,
+    ~className: string=?,
+
+    ~menuStyle: ReactDOMRe.Style.t=?,
+    ~activeKey: string=?,
     ~onClose: unit => unit=?,
     ~onOpen: unit => unit=?,
     ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
@@ -26,14 +28,13 @@ external make:
                 ]
                   =?,
     ~renderTitle: React.element => React.element=?,
-    ~title: React.element =?,
+    ~title: React.element=?,
     ~toggleClassName: string=?,
     ~toggleComponentClass: unit => React.element=?,
     ~trigger: [@bs.string] [
-                | //   TODO
-                  `click
+                | `click
                 | `hover
-                | `contextMenu
+                | `contextMenu //   TODO
               ]
                 =?
   ) =>
@@ -44,9 +45,12 @@ module Item = {
   [@bs.module "rsuite"] [@bs.scope "Dropdown"] [@react.component]
   external make:
     (
-      ~active: bool=?,
+      ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
       ~classPrefix: string=?,
+      ~className: string=?,
+
+      ~active: bool=?,
       ~disabled: bool=?,
       ~divider: bool=?,
       ~panel: bool=?,
@@ -63,7 +67,11 @@ module Menu = {
   [@bs.module "rsuite"] [@bs.scope "Dropdown"] [@react.component]
   external make:
     (
+      ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
+      ~classPrefix: string=?,
+      ~className: string=?,
+      
       ~title: string=?,
       ~pullLeft: bool=?,
       ~icon: React.element=?

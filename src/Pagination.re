@@ -4,6 +4,8 @@ external make: (
   ~style: ReactDOMRe.Style.t=?,
   ~children: React.element=?,
   ~classPrefix: string=?,
+  ~className: string=?,
+  
   ~activePage: int=?,
   ~maxButtons: int=?,
   ~pages: int=?,

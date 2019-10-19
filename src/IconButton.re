@@ -3,6 +3,9 @@ external make:
   (
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
+    ~classPrefix: string=?,
+    ~className: string=?,
+    
     ~circle: bool=?,
     ~icon: React.element=?,
     ~placement: [@bs.string] [

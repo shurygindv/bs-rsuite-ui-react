@@ -4,6 +4,8 @@ external make: (
   ~style: ReactDOMRe.Style.t=?,
   ~children: React.element=?,
   ~classPrefix: string=?,
+  ~className: string=?,
+  
   ~bodyFill: bool=?,
   ~bordered: bool=?,
   ~collapsible: bool=?,

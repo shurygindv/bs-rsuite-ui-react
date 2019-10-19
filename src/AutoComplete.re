@@ -1,10 +1,13 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
+    ~data: array(RsuiteTypes.DataItemType.t),
+
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     ~classPrefix: string=?,
-    ~data: array(RsuiteTypes.DataItemType.t), //  // todo: research bs.obj label data does not support [@bs.unwrap] 
+    ~className: string=?,
+
     ~defaultValue: string=?,
     ~disabled: bool=?,
     ~onChange: (string, ReactEvent.Synthetic.t) => unit=?,

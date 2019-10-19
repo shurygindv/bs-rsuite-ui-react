@@ -5,9 +5,11 @@
 external make: (
   ~style: ReactDOMRe.Style.t=?,
   ~children: React.element=?,
+  ~classPrefix: string=?,
+  ~className: string=?,
+
   ~arrowOffsetLeft: string=?,
   ~arrowOffsetTop: string=?,
   ~positionLeft: int=?,
   ~positionTop: int=?,
-  ~classPrefix: string=?,
 ) => React.element = "Tooltip";

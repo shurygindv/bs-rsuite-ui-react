@@ -4,7 +4,9 @@ external make:
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     ~classPrefix: string=?,
-    ~separator: React.element=?,
+    ~className: string=?,
+    
+    ~separator: React.element=?
   ) =>
   React.element =
   "Breadcrumb";
@@ -15,8 +17,11 @@ module Item = {
     (
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
+      ~classPrefix: string=?,
+      ~className: string=?,
+
       ~active: bool=?,
-      ~componentClass: unit => React.element=?,
+      ~componentClass: unit => React.element=?
     ) =>
     React.element =
     "Item";

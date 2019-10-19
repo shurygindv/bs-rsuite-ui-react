@@ -1,13 +1,13 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
-    data: array(Js.Dict.t('a))=?,
+    ~data: array(Js.Dict.t('a)),
 
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     ~classPrefix: string=?,
     ~className: string=?,
-
+    
     ~width: int=?,
     ~height: int=?,
     ~autoHeight: bool=?,
@@ -36,7 +36,7 @@ external make:
     ~onScroll: (int, int) => unit=?,
     ~onSortColumn: (string, [ | `desc | `asc]) => unit=?, // TODO: stringify 2n arg
     ~onExpandChange: (bool, Js.Dict.t('a)) => unit=?,
-    ~renderTreeToggle: (React.element, Js.Dict.t('a)) => React.element=?, 
+    ~renderTreeToggle: (React.element, Js.Dict.t('a)) => React.element=?,
     ~renderRowExpanded: Js.Dict.t('a) => React.element=?,
     ~renderEmpty: React.element => React.element=?,
     ~renderLoading: React.element => React.element=?
@@ -50,6 +50,8 @@ module Column = {
     (
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
+      ~classPrefix: string=?,
+      ~className: string=?,
 
       ~align: [@bs.string] [ | `left | `center | `right]=?,
       ~colSpan: int=?,
@@ -72,9 +74,10 @@ module Cell = {
     (
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
-
+      ~classPrefix: string=?,
+      ~className: string=?,
       ~dataKey: string=?,
-      ~rowData: Js.Dict.t('a)=?, 
+      ~rowData: Js.Dict.t('a)=?,
       ~rowIndex: int=?
     ) =>
     React.element =

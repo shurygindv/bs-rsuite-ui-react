@@ -6,9 +6,12 @@
       ~action: string,
 
       ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element=?,
+      ~classPrefix: string=?,
+      ~className: string=?,
+
       ~accept: string=?,
       ~autoUpload: bool=?,
-      ~classPrefix: string=?,
       ~data: Js.Dict.t('a)=?,
       ~defaultFileList: array(RsuiteTypes.FileType.t)=?,
       ~disabled: bool=?,

@@ -4,10 +4,13 @@
   external make:
     (
       ~data: array(RsuiteTypes.DataItemType.t),
+
       ~style: ReactDOMRe.Style.t=?,
-      ~menuStyle: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
       ~classPrefix: string=?,
+      ~className: string=?,
+
+      ~menuStyle: ReactDOMRe.Style.t=?,
       ~block: bool=?,
       ~cleanable: bool=?,
       ~container: Dom.element=?, // TODO

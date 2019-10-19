@@ -3,6 +3,7 @@
 external make: (
   ~style: ReactDOMRe.Style.t=?,
   ~children: React.element=?,
+  
   ~bordered: bool=?,
   ~compact: bool=?,
   ~defaultValue: Js.Date.t=?,

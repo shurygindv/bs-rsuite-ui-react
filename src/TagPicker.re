@@ -6,10 +6,12 @@
       ~data: array(RsuiteTypes.DataItemType.t),
 
       ~style: ReactDOMRe.Style.t=?,
-      ~menuStyle: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
-      ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
       ~classPrefix: string=?,
+      ~className: string=?,
+      
+      ~menuStyle: ReactDOMRe.Style.t=?,
+      ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
       ~block: bool=?,
       ~cleanable: bool=?,
       ~container: Dom.element=?, // TODO

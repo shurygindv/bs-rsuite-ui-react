@@ -3,6 +3,8 @@ external make:
   (
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
+    ~classPrefix: string=?,
+    ~className: string=?,
     
     ~barClassName: string=?,
     ~defaultValue: int=?,

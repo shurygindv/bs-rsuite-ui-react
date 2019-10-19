@@ -2,7 +2,10 @@ module Line = {
   [@bs.module "rsuite"] [@bs.scope "Progress"] [@react.component]
   external make:
     (
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element=?,
       ~classPrefix: string=?,
+      ~className: string=?,
       ~percent: int=?,
       ~showInfo: bool=?,
       ~strokeWidth: int=?,
@@ -17,7 +20,11 @@ module Circle = {
   [@bs.module "rsuite"] [@bs.scope "Progress"] [@react.component]
   external make:
     (
+      ~style: ReactDOMRe.Style.t=?,
+      ~children: React.element=?,
       ~classPrefix: string=?,
+      ~className: string=?,
+      
       ~percent: int=?,
       ~showInfo: bool=?,
       ~strokeWidth: int=?,

@@ -8,6 +8,8 @@ external make:
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     ~classPrefix: string=?,
+    ~className: string=?,
+    
     ~accepter: unit => React.element=?,
     ~checkTrigger: [@bs.string] [
                   | `change

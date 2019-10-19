@@ -4,6 +4,9 @@ external make:
   (
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
+    ~classPrefix: string=?,
+    ~className: string=?,
+    
     ~appearance: [@bs.string] [
       | `default
       | `subtle

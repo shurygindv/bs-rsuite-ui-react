@@ -6,14 +6,16 @@
       ~data: array(RsuiteTypes.DataItemType.t),
 
       ~style: ReactDOMRe.Style.t=?,
-      ~menuStyle: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
+      ~classPrefix: string=?,
+      ~className: string=?,
+      
+      ~menuStyle: ReactDOMRe.Style.t=?,
       ~appearance: [@bs.string] [
         | `default
         | `subtle
       ]=?,
       ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
-      ~classPrefix: string=?,
       ~block: bool=?,
       ~cleanable: bool=?,
       ~disabled: bool=?,

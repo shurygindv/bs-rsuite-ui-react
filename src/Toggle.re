@@ -4,7 +4,10 @@
 [@react.component]
 external make: (
   ~style: ReactDOMRe.Style.t=?,
+  ~children: React.element=?,
   ~classPrefix: string=?,
+  ~className: string=?,
+  
   ~checkedChildren: React.element=?,
   ~unCheckedChildren: React.element=?,
   ~checked: bool=?,

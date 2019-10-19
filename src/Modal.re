@@ -3,12 +3,14 @@ external make:
   (
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
+    ~classPrefix: string=?,
+    ~className: string=?,
+
     ~autoFocus: bool=?,
     ~backdrop: [@bs.string] [ // todo: bool
       | `static
     ]=?,
     ~backdropClassName: string=?,
-    ~classPrefix: string=?,
     ~dialogClassName: string=?,
     ~dialogComponentClass: unit => React.element=?,
     ~enforceFocus: bool=?,
