@@ -9,12 +9,12 @@
       ~accept: string=?,
       ~autoUpload: bool=?,
       ~classPrefix: string=?,
-      ~data: {.}=?, // TODO: as Dict
+      ~data: Js.Dict.t('a)=?,
       ~defaultFileList: array(RsuiteTypes.FileType.t)=?,
       ~disabled: bool=?,
       ~disabledFileItem: bool=?,
       ~fileList: array(RsuiteTypes.FileType.t)=?,
-      ~headers: {.}=?, // TODO as Dict
+      ~headers: Js.Dict.t('a)=?,
       ~listType: [@bs.string] [
         | `text
         | `picture
@@ -24,12 +24,12 @@
       ~multiple: bool=?,
       ~name: string=?,
       ~onChange: (array(RsuiteTypes.FileType.t)) => unit=?,
-      ~onError: ({.}, RsuiteTypes.FileType.t) => unit=?, // TODO as Dic
+      ~onError: (Js.Dict.t('a), RsuiteTypes.FileType.t) => unit=?,
       ~onPreview: (RsuiteTypes.FileType.t, ReactEvent.Synthetic.t) => unit=?,
       ~onProgress: (int, RsuiteTypes.FileType.t) => unit=?,
       ~onRemove: (RsuiteTypes.FileType.t) => unit=?,
       ~onReupload: (RsuiteTypes.FileType.t) => unit=?,
-      ~onSuccess: ({.}, RsuiteTypes.FileType.t) => unit=?,
+      ~onSuccess: (Js.Dict.t('a), RsuiteTypes.FileType.t) => unit=?,
       ~onUpload: (RsuiteTypes.FileType.t) => unit=?,
       ~renderFileInfo: (
         RsuiteTypes.FileType.t,
