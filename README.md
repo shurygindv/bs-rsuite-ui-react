@@ -67,19 +67,19 @@
 |  Data Entry    | `<Cascader />`                      |   ✅   |
 |  Data Entry    | `<MultiCascader />`                 |   ✅   |
 |  Data Entry    | `<DatePicker />`                    |   ✅   |
-|  Data Entry    | `<DateRangePicker />`               |   🛑   |
+|  Data Entry    | `<DateRangePicker />`               |   ✅   |
 |  Data Entry    | `<Slider />`                        |   ✅   |
-|  Data Entry    | `<Uploader />`                      |   🛑   |
+|  Data Entry    | `<Uploader />`                      |   ✅   |
 |     :-:        | ------------------------------------|   :-:   |
 |  Data Display  | `<Avatar />`                        |   ✅   |
 |  Data Display  | `<Badge />`                         |   ✅   |
-|  Data Display  | `<Table />`                         |   🛑   |
+|  Data Display  | `<Table />` + Cell/Column/Header    |   ✅   |
 |  Data Display  | `<Tree />`                          |   🛑   |
 |  Data Display  | `<CheckTree />`                     |   🛑   |
 |  Data Display  | `<Panel />`                         |   ✅   |
 |  Data Display  | `<Timeline />`                      |   ✅   |
 |  Data Display  | `<Tag />;<TagGroup/>`               |   ✅   |
-|  Data Display  | `<List />`                          |   🛑   |
+|  Data Display  | `<List />`                          |   ✅   |
 |  Data Display  | `<Calendar />`                      |   ✅   |
 |   :-:          | ------------------------------------|   :-:   |
 |  Layout        | `<Grid />`; `<Row />`; `<Col />`    |   ✅   |
