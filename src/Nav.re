@@ -1,39 +1,44 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
+    ~children: React.element,
     ~style: ReactDOMRe.Style.t=?,
-    ~children: React.element=?,
     ~classPrefix: string=?,
-    ~componentClass: unit => React.element=?,
+    ~className: string=?,
+
     ~appearance: [@bs.string] [
                   | `default
-                  | `inverse
+                  | `tabs
                   | `subtle
                 ]
      =?,
+     ~justified: bool=?,
+     ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
+     ~pills: bool=?,
+     ~pullRight: bool=?,
+     ~stacked: bool=?,
   ) =>
   React.element =
-  "Navbar";
+  "Nav";
 
+
+  module Item = {
+    [@bs.module "rsuite"] [@bs.scope "Nav"] [@react.component]
+    external make:
+      (
+        ~children: React.element,
+
+        ~style: ReactDOMRe.Style.t=?,
+        ~classPrefix: string=?,
+        ~className: string=?,
+        ~active: bool=?,
+        ~componentClass: unit => React.element=?,
+        ~disabled: bool=?,
+        ~href: string=?,
+        ~icon: (Icon.Props.t) => React.element=?,
+        ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
+      ) =>
+      React.element =
+      "Item";
+  };
   
-module Header = {
-  [@bs.module "rsuite"] [@bs.scope "Navbar"] [@react.component]
-  external make:
-    (
-      ~style: ReactDOMRe.Style.t=?,
-      ~children: React.element=?,
-    ) =>
-    React.element =
-    "Header";
-};
-
-module Body = {
-  [@bs.module "rsuite"] [@bs.scope "Navbar"] [@react.component]
-  external make:
-    (
-      ~style: ReactDOMRe.Style.t=?,
-      ~children: React.element=?,
-    ) =>
-    React.element =
-    "Body";
-};
