@@ -73,6 +73,7 @@
 |     :-:        | ------------------------------------|   :-:   |
 |  Data Display  | `<Avatar />`                        |   ✅   |
 |  Data Display  | `<Badge />`                         |   ✅   |
+|  Data Display  | `<Table />`                         |   🛑   |
 |  Data Display  | `<Tree />`                          |   🛑   |
 |  Data Display  | `<CheckTree />`                     |   🛑   |
 |  Data Display  | `<Panel />`                         |   ✅   |
