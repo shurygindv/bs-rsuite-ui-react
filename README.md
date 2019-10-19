@@ -46,7 +46,11 @@
 |  Navigation    | `<Pagination />`                    |   ✅   |
 |  Navigation    | `<Breadcrumb />`                    |   ✅   |
 |   :-:          | ------------------------------------|   :-:  |
-|  Data Entry    | `<Form />`                          |   🛑   |
+|  Data Entry    | `<Form />`                          |   🌓   |
+|  Data Entry    | `<ControlLabel />`                  |   ✅   |
+|  Data Entry    | `<FormGroup />`                     |   ✅   |
+|  Data Entry    | `<FormControl />`                   |   ✅   |
+|  Data Entry    | `<HelpBlock />`                     |   ✅   |
 |  Data Entry    | `<Checkbox />`                      |   ✅   |
 |  Data Entry    | `<Radio />`; `<RadioGroup />`       |   ✅   |
 |  Data Entry    | `<Input />`                         |   ✅   |
@@ -62,13 +66,14 @@
 |  Data Entry    | `<CheckTreePicker />`               |   ✅   |
 |  Data Entry    | `<Cascader />`                      |   ✅   |
 |  Data Entry    | `<MultiCascader />`                 |   ✅   |
-|  Data Entry    | `<DatePicker />`                    |   🛑   |
+|  Data Entry    | `<DatePicker />`                    |   ✅   |
 |  Data Entry    | `<DateRangePicker />`               |   🛑   |
 |  Data Entry    | `<Slider />`                        |   ✅   |
 |  Data Entry    | `<Uploader />`                      |   🛑   |
 |     :-:        | ------------------------------------|   :-:   |
 |  Data Display  | `<Avatar />`                        |   ✅   |
 |  Data Display  | `<Badge />`                         |   ✅   |
+|  Data Display  | `<Table />`                         |   🛑   |
 |  Data Display  | `<Tree />`                          |   🛑   |
 |  Data Display  | `<CheckTree />`                     |   🛑   |
 |  Data Display  | `<Panel />`                         |   ✅   |
@@ -135,6 +140,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
  RsuiteUi.Notification.success(RsuiteUi.Notification.Props.make(
    ~title = React.string("I'm title"),
    ~description = React.string("I'm desc"),
+   ()
  ));
 ```
 
@@ -144,9 +150,10 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
  let item = RsuiteUi.RsuiteTypes.DataItemType.make(
   ~value = "value",
   ~label = React.string("value"),
+  ()
  );
  
- <RsuiteUi.CheckPicker data=[|item|]] />
+ <RsuiteUi.CheckPicker data={[|item|]]} />
 ```
 
 
@@ -172,6 +179,32 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
   </RsuiteUi.Modal>
 ```
 
+## Caveats
+
+**I**. Next components: `<MultiCascader />`, `<Cascader />`, `<DatePicker />`, `Notification module` have **_open** prop instead **open**
+
+**Example:**
+
+```reason 
+  <MultiCascader _open={true} />
+  <Cascader _open={true} />
+  <DatePicker _open={true} />
+   
+   
+   Notification._open(...); // instead Notification.open()
+```
+
+**II**. Similar situation with `<FlexboxGrid />`; Sometimes we would be to use prop `justify` with **end** value, but we should use **end_** instead
+ 
+**Example**
+
+```reason 
+  <FlexboxGrid justify=`end_ />
+  <FlexboxGrid justify=`spaceAround />
+  <FlexboxGrid justify=`center />
+```
+
+
 ## Contributions
 
 It would be great, make our world better!
@@ -187,21 +220,16 @@ All contributions are welcomed.
 - They are the same (aliases), prefer `React.string`
 - See: https://github.com/reasonml/reason-react/issues/406 comments
 
-**3**. How can we pass string as prop?
+**3**. How can we pass string as child?
 
 - Use `React.string("example")` instead `"example"`
 
-**4**. What `_type` mean as `Component` prop?
+**4**. What `_type`, `_open` mean as `Component` prop?
 
-- `type` is reserved in Reason/Ocaml,
+- `type` / `open` is reserved in Reason/Ocaml,
 - See: https://bucklescript.github.io/docs/en/object
 and https://github.com/reasonml/reason-react/issues/475
 
-**5**. What `_open` mean as `Component` prop?
-
-- `open` is reserved... (analogue **4**)
-
-`...to be continued`
 
 And many other useful details about Reason React here!
   See: https://github.com/reasonml/reason-react/tree/master/docs
