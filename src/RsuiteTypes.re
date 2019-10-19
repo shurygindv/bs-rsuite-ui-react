@@ -7,7 +7,6 @@ module DataItemType = {
         [@bs.optional] groupBy: string,
       };
       
-
     let make = t;
 }
 
@@ -57,6 +56,18 @@ module Locale = {
         hours: string,
         minutes: string,
         seconds: string
+    };
+
+    let make = t;
+}
+
+module ListPayload = {
+    [@bs.deriving abstract]
+    type t = {
+        collection: string,
+        node: Dom.htmlElement,
+        newIndex: int,
+        oldIndex: int
     };
 
     let make = t;
