@@ -72,3 +72,13 @@ module ListPayload = {
 
     let make = t;
 }
+
+module MenuItem = {
+    [@bs.deriving abstract]
+    type t = {
+        label: React.element,
+        value: int
+    };
+
+    let make = t;
+}
