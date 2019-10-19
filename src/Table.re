@@ -1,7 +1,7 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
-    ~data: array(Js.Dict.t('a))=?,
+    data: array(Js.Dict.t('a))=?,
 
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
