@@ -9,9 +9,10 @@
 
 ## Plans
 
-1. Cover all components **in progress**
-2. Avoid type duplications, create common.re module for types (to reuse)
-3. Check and fix some to-do`s
+1. Cover all documented components ✅
+2. Compare with official GitHub repo **in progress**
+3. Check TODOs, fixes
+4. Improve DX (reuse, variants instead string as possible and etc.)
 
 
 ## Roadmap
