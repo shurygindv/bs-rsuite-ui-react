@@ -74,8 +74,8 @@
 |  Data Display  | `<Avatar />`                        |   ✅   |
 |  Data Display  | `<Badge />`                         |   ✅   |
 |  Data Display  | `<Table />` + Cell/Column/Header    |   ✅   |
-|  Data Display  | `<Tree />`                          |   🛑   |
-|  Data Display  | `<CheckTree />`                     |   🛑   |
+|  Data Display  | `<Tree />`                          |   ✅   |
+|  Data Display  | `<CheckTree />`                     |   ✅   |
 |  Data Display  | `<Panel />`                         |   ✅   |
 |  Data Display  | `<Timeline />`                      |   ✅   |
 |  Data Display  | `<Tag />;<TagGroup/>`               |   ✅   |
@@ -86,7 +86,7 @@
 |  Layout        | `<FlexboxGrid />`                   |   ✅   |
 |  Layout        | `<Container />`                     |   ✅   |
 |   :-:          | ------------------------------------|   :-:   |
-|  Utils         | `<Animation />`                     |   🛑   |
+|  Utils         | `<Animation />`                     |   ✅   |
 |  Utils         | `<Portal />`                        |   ✅   |
 
 ## Installation
@@ -156,6 +156,28 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
  <RsuiteUi.CheckPicker data={[|item|]]} />
 ```
 
+**Animation**
+
+```reason 
+  let (isVisible, setVisibility) = React.useState(() => false);
+
+  React.useEffect0(() => {
+    Js.Global.setTimeout(() => {
+      setVisibility(_ => true);
+    }, 200);
+    None
+  });
+
+  <RsuiteUi.Animation.Bounce 
+    _in={isVisible}
+  >
+    <div>
+      {React.string("An")}
+    </div>
+  </RsuiteUi.Animation.Bounce> 
+```
+
+
 
 **Modal**
 
@@ -194,7 +216,18 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
    Notification._open(...); // instead Notification.open()
 ```
 
-**II**. Similar situation with `<FlexboxGrid />`; Sometimes we would be to use prop `justify` with **end** value, but we should use **end_** instead
+**II**. **_in** instead **in** prop
+
+```reason 
+   <RsuiteUi.Animation.Bounce _in={isVisible} />
+  
+   <RsuiteUi.Animation.Transition _in={isVisible} />
+   
+   <RsuiteUi.Animation.Slide _in={isVisible} />
+```
+
+
+**III**. Similar situation with `<FlexboxGrid />`; Sometimes we would be to use prop `justify` with **end** value, but we should use **end_** instead
  
 **Example**
 
