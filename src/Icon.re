@@ -33,7 +33,7 @@ external make: (
   ~inverse: bool=?,
   ~rotate: int=?,
   ~fixedWidth: bool=?,
-  ~icon: string=?,
+  ~icon: string=?, // TODO: or SVGIcon {id, view}
   ~size: [@bs.string] [
     | `lg
   ]=?,
