@@ -18,6 +18,8 @@ external make:
      ~activeKey: string=?,
      ~pullRight: bool=?,
      ~reversed: bool=?,
+
+     ~onClick: ReactEvent.Mouse.t => unit=?,
   ) =>
   React.element =
   "Nav";
@@ -40,6 +42,7 @@ external make:
         ~hasTooltip: bool=?,
         ~icon: React.element=?,
         ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
+        ~onClick: ReactEvent.Mouse.t => unit=?,
         ~componentClass: unit => React.element=?,
       ) =>
       React.element =

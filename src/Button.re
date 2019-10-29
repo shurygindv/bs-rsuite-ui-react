@@ -30,7 +30,8 @@ external make:
               | `violet
             ]
               =?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?
+    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?,
+    ~onClick: ReactEvent.Mouse.t => unit=?,
   ) =>
   React.element =
   "Button";
