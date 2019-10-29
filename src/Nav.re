@@ -14,9 +14,10 @@ external make:
      =?,
      ~justified: bool=?,
      ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
-     ~pills: bool=?,
+     ~vertical: bool=?,
+     ~activeKey: string=?,
      ~pullRight: bool=?,
-     ~stacked: bool=?,
+     ~reversed: bool=?,
   ) =>
   React.element =
   "Nav";
@@ -32,11 +33,14 @@ external make:
         ~classPrefix: string=?,
         ~className: string=?,
         ~active: bool=?,
-        ~componentClass: unit => React.element=?,
         ~disabled: bool=?,
-        ~href: string=?,
-        ~icon: (Icon.Props.t) => React.element=?,
+        ~divider: bool=?,
+        ~panel: bool=?,
+        ~eventKey: string=?,
+        ~hasTooltip: bool=?,
+        ~icon: React.element=?,
         ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
+        ~componentClass: unit => React.element=?,
       ) =>
       React.element =
       "Item";
