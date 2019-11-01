@@ -7,10 +7,14 @@ external make:
     ~className: string=?,
     
     ~defaultValue: int=?,
-    ~value: int=?,
+    ~value: string=?,
     ~disabled: bool=?,
     ~_type: [@bs.string] [ | `text]=?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?
+    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?,
+    ~inputRef: ReactDOMRe.Ref.t=?,
+
+    ~onPressEnter: ReactEvent.Keyboard.t => unit=?,
+    ~onChange: (string, ReactEvent.Synthetic.t) => unit=?,
   ) =>
   React.element =
   "Input";
