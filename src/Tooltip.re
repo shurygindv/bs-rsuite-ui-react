@@ -12,4 +12,6 @@ external make: (
   ~arrowOffsetTop: string=?,
   ~positionLeft: int=?,
   ~positionTop: int=?,
+
+  ~onClick: ReactEvent.Mouse.t => unit=?,
 ) => React.element = "Tooltip";

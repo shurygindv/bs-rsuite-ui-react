@@ -41,4 +41,6 @@ external make: (
     | `vertical
     | `horizontal
   ]=?,
+
+  ~onClick: ReactEvent.Mouse.t => unit=?,
 ) => React.element = "Icon";

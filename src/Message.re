@@ -14,6 +14,7 @@ external make: (
   ~description: React.element=?,
   ~title: React.element=?,
   ~onClose: unit => unit=?,
+  ~onClick: ReactEvent.Mouse.t => unit=?,
   ~_type: [@bs.string] [
     | `info
     | `warning

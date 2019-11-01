@@ -12,7 +12,9 @@ external make:
     ~vertical: bool=?,
     ~content: React.element=?,
     ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?,
-    ~speed: [@bs.string] [ | `fast | `normal | `slow]=?
+    ~speed: [@bs.string] [ | `fast | `normal | `slow]=?,
+
+    ~onClick: ReactEvent.Mouse.t => unit=?,
   ) =>
   React.element =
   "Loader";
