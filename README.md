@@ -89,6 +89,7 @@
 |   :-:          | ------------------------------------|   :-:   |
 |  Utils         | `<Animation />`                     |   ✅   |
 |  Utils         | `<Portal />`                        |   ✅   |
+|  Utils         | `DOMHelper module`                  |   ✅   |
 
 ## Installation
 
@@ -258,9 +259,9 @@ All contributions are welcomed.
 
 - Use `React.string("example")` instead `"example"`
 
-**4**. What `_type`, `_open` mean as `Component` prop?
+**4**. What `_type`, `_open`, `_val`, `_in` mean as `Component` prop?
 
-- `type` / `open` is reserved in Reason/Ocaml,
+- are reserved in Reason/Ocaml (aliases `type`, `open` and so on),
 - See: https://bucklescript.github.io/docs/en/object
 and https://github.com/reasonml/reason-react/issues/475
 
