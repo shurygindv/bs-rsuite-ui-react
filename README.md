@@ -90,6 +90,8 @@
 |  Utils         | `<Animation />`                     |   ✅   |
 |  Utils         | `<Portal />`                        |   ✅   |
 |  Utils         | `DOMHelper module`                  |   ✅   |
+|   :-:          | ------------------------------------|   :-:   |
+|  Undocumented  | `<SafeAnchor />`                    |   ✅   |
 
 ## Installation
 
