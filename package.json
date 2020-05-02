@@ -28,6 +28,6 @@
     "reason-react": "~0.7.0"
   },
   "dependencies": {
-    "rsuite": "^4.0.3"
+    "rsuite": "^4.4.1"
   }
 }
