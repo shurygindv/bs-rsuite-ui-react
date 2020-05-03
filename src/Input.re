@@ -1,6 +1,7 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
+    ~id: string =?,
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     ~classPrefix: string=?,
