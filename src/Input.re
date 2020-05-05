@@ -1,3 +1,22 @@
+
+module Type = {
+  type t = [
+     | `text 
+     | `password 
+     | `number 
+     | `checkbox 
+     | `tel 
+     | `hidden  
+     | `date 
+     | `color 
+     | `email 
+     | `time 
+    ];
+}
+module Size = {
+  type t = [ | `lg | `md | `sm | `xs];
+};
+
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
