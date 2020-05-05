@@ -6,6 +6,7 @@ external make:
     ~children: React.element=?,
     ~classPrefix: string=?,
     ~className: string=?,
+    ~placeholder: string=?,
     
     ~defaultValue: int=?,
     ~value: string=?,
