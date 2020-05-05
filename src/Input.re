@@ -17,6 +17,9 @@ external make:
 
     ~onPressEnter: ReactEvent.Keyboard.t => unit=?,
     ~onChange: (string, ReactEvent.Synthetic.t) => unit=?,
+    ~onFocus: (ReactEvent.Synthetic.t) => unit=?,
+    ~onBlur: (ReactEvent.Synthetic.t) => unit=?,
+    ~onClick: (ReactEvent.Mouse.t) => unit=?,
   ) =>
   React.element =
   "Input";
