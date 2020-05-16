@@ -8,8 +8,10 @@ external make:
 
     ~menuStyle: ReactDOMRe.Style.t=?,
     ~activeKey: string=?,
+    ~eventKey: string=?,
     ~onClose: unit => unit=?,
     ~onOpen: unit => unit=?,
+    ~icon: React.element=?,
     ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
     ~onToggle: bool => unit=?,
     ~placement: [@bs.string] [
