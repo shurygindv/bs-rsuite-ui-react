@@ -9,6 +9,7 @@ external make:
     ~children: React.element=?,
     ~classPrefix: string=?,
     ~className: string=?,
+    ~componentClass: string=?,
     
     ~accepter: unit => React.element=?,
     ~checkTrigger: [@bs.string] [
