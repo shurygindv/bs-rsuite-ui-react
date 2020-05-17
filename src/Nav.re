@@ -38,6 +38,7 @@ external make:
         ~disabled: bool=?,
         ~divider: bool=?,
         ~panel: bool=?,
+        ~href: string=?,
         ~eventKey: string=?,
         ~hasTooltip: bool=?,
         ~icon: React.element=?,
