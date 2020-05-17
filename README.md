@@ -1,6 +1,6 @@
 # ReasonML bindings for  [Rsuite UI React library](https://rsuitejs.com)
 
-[![npm version](https://badge.fury.io/js/%40sdv-studio%2Fbs-rsuite-ui-react.svg)](https://badge.fury.io/js/%40sdv-studio%2Fbs-rsuite-ui-react)
+[![npm version](https://badge.fury.io/js/bs-rsuite-ui-react.svg)](https://badge.fury.io/js/bs-rsuite-ui-react)
 
  [Official overview](https://rsuitejs.com/en/components/overview) (bindings according it)
  
@@ -10,10 +10,11 @@
 ## Plans
 
 1. Cover all documented components ✅
-2. Compare with official GitHub repo **in progress**
+2. Compare with official GitHub repo 
 3. Check TODOs, fixes
-4. Improve DX (reuse, variants instead string as possible and etc.)
-
+4. Example project
+5. Improve DX (reuse, variants instead string as possible and etc.)
+6. Tests, codegen
 
 ## Roadmap
 
@@ -100,7 +101,9 @@
 ```
 yarn add "https://github.com/shurygindv/bs-rsuite-ui-react.git"
 or
-yarn add @sdv-studio/bs-rsuite-ui-react
+yarn add bs-rsuite-ui-react
+or
+npm i bs-rsuite-ui-react
 ```
 
 **II**. Also we need to say `bsb`: heey, look! Seems, `bs-rsuite-ui-react` perfectly complements you, let's add it to `bs-dependencies
@@ -111,7 +114,7 @@ yarn add @sdv-studio/bs-rsuite-ui-react
       "bs-dependencies": [
         "reason-react",
         ...,
-        "@sdv-studio/bs-rsuite-ui-react"
+        "bs-rsuite-ui-react"
     ],
   ...
 ```
