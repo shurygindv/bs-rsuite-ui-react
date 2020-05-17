@@ -66,7 +66,7 @@
   [@bs.module "rsuite"] [@bs.scope "DOMHelper"]
   external removeStyles: (
     Dom.element,
-    array(string)
+    list(string)
   ) => unit = "removeStyle";
 
   [@bs.module "rsuite"] [@bs.scope "DOMHelper"]

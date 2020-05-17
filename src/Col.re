@@ -6,7 +6,7 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
 
-    ~componentClass: unit => React.element=?,
+    ~componentClass: 'a=> React.element=?,
 
     ~lg: int=?,
     ~lgHidden: int=?,

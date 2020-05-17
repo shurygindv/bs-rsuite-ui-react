@@ -57,8 +57,9 @@ module Item = {
       ~divider: bool=?,
       ~panel: bool=?,
       ~eventKey: string=?,
+      ~href: string=?, // if you use componentClass as Link
       ~icon: React.element=?,
-      ~componentClass: unit => React.element=?,
+      ~componentClass: 'a => React.element=?,
       ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?
     ) =>
     React.element =

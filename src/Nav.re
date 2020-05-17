@@ -43,7 +43,7 @@ external make:
         ~icon: React.element=?,
         ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
         ~onClick: ReactEvent.Mouse.t => unit=?,
-        ~componentClass: unit => React.element=?,
+        ~componentClass: 'a=> React.element=?,
       ) =>
       React.element =
       "Item";

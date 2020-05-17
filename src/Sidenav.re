@@ -8,11 +8,11 @@ external make:
     
     ~activeKey: string=?,
     ~expanded: bool=?,
-    ~openKeys: array(string)=?,
-    ~defaultOpenKeys: array(string)=?,
-    ~onOpenChange: (array(string), ReactEvent.Synthetic.t) => unit=?,
-    ~onSelect: (array(string), ReactEvent.Synthetic.t) => unit=?,
-    ~componentClass: unit => React.element=?,
+    ~openKeys: list(string)=?,
+    ~defaultOpenKeys: list(string)=?,
+    ~onOpenChange: (list(string), ReactEvent.Synthetic.t) => unit=?,
+    ~onSelect: (list(string), ReactEvent.Synthetic.t) => unit=?,
+    ~componentClass: 'a=> React.element=?,
     ~appearance: [@bs.string] [
                   | `default
                   | `inverse

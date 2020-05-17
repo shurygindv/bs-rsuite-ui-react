@@ -6,7 +6,7 @@ external make:
     ~children: React.element=?,
     ~classPrefix: string=?,
     ~className: string=?,
-    ~componentClass: unit => React.element=?,
+    ~componentClass: 'a=> React.element=?,
     ~appearance: [@bs.string] [ | `default | `inverse | `subtle]=?
   ) =>
   React.element =

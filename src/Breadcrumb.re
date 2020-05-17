@@ -21,7 +21,7 @@ module Item = {
       ~className: string=?,
 
       ~active: bool=?,
-      ~componentClass: unit => React.element=?
+      ~componentClass: 'a=> React.element=?
     ) =>
     React.element =
     "Item";
