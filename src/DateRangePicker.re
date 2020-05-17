@@ -16,12 +16,12 @@ external make:
     ~cleanable: bool=?,
     ~container: Dom.htmlElement=?, // TODO or unit => Dom.htmlElement,
     ~defaultOpen: bool=?,
-    ~defaultValue: array(Js.Date.t)=?,
-    ~defaultCalendarValue: array(Js.Date.t)=?,
+    ~defaultValue: list(Js.Date.t)=?,
+    ~defaultCalendarValue: list(Js.Date.t)=?,
     ~disabled: bool=?,
     ~disabledDate: (
       Js.Date.t,
-      array(Js.Date.t),
+      list(Js.Date.t),
       bool,
       string // TODO +unions: 'CALENDAR', 'TOOLBAR...
     ) => bool=?,
@@ -31,10 +31,10 @@ external make:
     ]=?, // TODO: or  (date: Date)=> Array<Date>
     ~isoWeek: bool=?,
     ~limitEndYear: int=?,
-    ~onChange: (array(Js.Date.t)) => unit=?,
+    ~onChange: (list(Js.Date.t)) => unit=?,
     ~onClean: (ReactEvent.Synthetic.t) => unit=?,
     ~onClose: unit => unit=?,
-    ~onOk: (array(Js.Date.t), ReactEvent.Synthetic.t) => unit=?,
+    ~onOk: (list(Js.Date.t), ReactEvent.Synthetic.t) => unit=?,
     ~onOpen: unit => unit=?,
     ~onSelect: (Js.Date.t) => unit=?,
     ~oneTap: bool=?,
@@ -58,7 +58,7 @@ external make:
       | `bottomEnd
     ]=?,
     ~preventOverflow: bool=?,
-    ~ranges: array(RsuiteTypes.Range.t)=?,
+    ~ranges: list(RsuiteTypes.Range.t)=?,
     ~showWeekNumbers: bool=?,
     ~size: [@bs.string] [
       | `lg
@@ -67,7 +67,7 @@ external make:
       | `xs
     ]=?,
     ~toggleComponentClass: unit => React.element=?,
-    ~value: array(Js.Date.t)=?
+    ~value: list(Js.Date.t)=?
   ) =>
     React.element =
     "DateRangePicker";
