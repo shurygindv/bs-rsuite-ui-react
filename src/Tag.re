@@ -9,5 +9,5 @@ external make: (
   ~closable: bool=?,
   ~color: string=?,
   ~onClose: (ReactEvent.Synthetic.t) => unit=?,
-  ~componentClass: unit => React.element=?,
+  ~componentClass: 'a=> React.element=?,
 ) => React.element = "Tag";

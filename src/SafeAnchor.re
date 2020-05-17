@@ -10,7 +10,7 @@ external make:
     ~tabIndex: string=?,
     ~disabled: bool=?,
     ~onClick: ReactEvent.Mouse.t => unit=?,
-    ~componentClass: unit => React.element=?,
+    ~componentClass: 'a=> React.element=?,
   ) =>
   React.element =
   "SafeAnchor";

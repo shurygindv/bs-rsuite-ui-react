@@ -16,7 +16,7 @@ external make:
     ~loading: bool=?,
     ~block: bool=?,
     ~href: string=?,
-    ~componentClass: unit => React.element=?,
+    ~componentClass: 'a=> React.element=?,
     ~appearance: [@bs.string] [
                    | `primary
                    | `link

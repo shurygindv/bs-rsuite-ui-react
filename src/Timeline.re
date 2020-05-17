@@ -7,7 +7,7 @@ external make:
     ~children: React.element=?,
     ~classPrefix: string=?,
     ~className: string=?,
-    ~componentClass: unit => React.element=?
+    ~componentClass: 'a=> React.element=?
   ) =>
   React.element =
   "Timeline";
@@ -21,7 +21,7 @@ module Item = {
       ~classPrefix: string=?,
       ~className: string=?,
       ~dot: React.element=?,
-      ~componentClass: unit => React.element=?
+      ~componentClass: 'a=> React.element=?
       ) =>
     React.element =
     "Item";

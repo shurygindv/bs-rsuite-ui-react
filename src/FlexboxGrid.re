@@ -29,7 +29,7 @@ module Item = {
       
       ~colspan: int=?,
       ~order: int=?,
-      ~componentClass: unit => React.element=?
+      ~componentClass: 'a=> React.element=?
     ) =>
     React.element =
     "Item";
