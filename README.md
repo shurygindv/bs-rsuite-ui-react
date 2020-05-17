@@ -10,7 +10,7 @@
 
 <sub><b>Deprecated: ~~https://www.npmjs.com/package/@sdv-studio/bs-rsuite-ui-react~~</b></sub>
 
-<sub>use `npm i bs-rsuite-ui-react` instead `npm i @sdv-studio/bs-rsuite-ui-react`</sub>
+<sub><b>use</b> `npm i bs-rsuite-ui-react` instead `npm i @sdv-studio/bs-rsuite-ui-react`</sub>
 ## Plans
 
 1. Cover all documented components ✅
