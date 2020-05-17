@@ -37,6 +37,7 @@ external make:
     ]=?,
     ~readonly: bool=?,
     ~plaintext: bool=?,
+    ~_type: [@bs.string] [ | `text | `password | `number | `checkbox | `tel | `hidden  | `date | `color | `email | `time ]=?,
   ) =>
   React.element =
   "FormControl";
