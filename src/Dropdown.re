@@ -58,7 +58,7 @@ module Item = {
       ~panel: bool=?,
       ~eventKey: string=?,
       ~icon: React.element=?,
-      ~componentClass: unit => React.element=?,
+      ~componentClass: 'a => React.element=?,
       ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?
     ) =>
     React.element =
