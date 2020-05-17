@@ -1,6 +1,11 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
+    ~_type: [@bs.string] [
+      | `submit
+      | `button
+      | `reset
+    ] =?,
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
     ~classPrefix: string=?,
