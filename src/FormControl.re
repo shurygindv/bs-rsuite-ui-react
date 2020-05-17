@@ -10,6 +10,7 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     ~componentClass: string=?,
+    ~rows: int=?,
     
     ~accepter: unit => React.element=?,
     ~checkTrigger: [@bs.string] [
