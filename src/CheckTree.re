@@ -2,7 +2,7 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
-    ~data: array(RsuiteTypes.DataItemType.t),
+    ~data: list(RsuiteTypes.DataItemType.t),
 
     ~children: React.element=?,
     ~style: ReactDOMRe.Style.t=?,
@@ -12,16 +12,16 @@ external make:
     ~cascade: bool=?,
     ~childKey: string=?,
     ~defaultExpandAll: bool=?,
-    ~defaultExpandItemValues: array(string)=?,
-    ~defaultValue: array(string)=?,
-    ~disabledItemValues: array(string)=?,
-    ~expandItemValues: array(string)=?,
+    ~defaultExpandItemValues: list(string)=?,
+    ~defaultValue: list(string)=?,
+    ~disabledItemValues: list(string)=?,
+    ~expandItemValues: list(string)=?,
     ~height: int=?,
     ~labelKey: string=?,
 
-    ~onChange: (array(string)) => unit=?,
+    ~onChange: (list(string)) => unit=?,
     ~onExpand: (
-      array(string), 
+      list(string), 
       RsuiteTypes.DataItemType.t,
       ('a, React.element) => array('a)
     ) => unit=?,
