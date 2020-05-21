@@ -7,6 +7,8 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     ~action: string=?,
+    ~name: string=?,
+    ~acceptCharset: string=?,
     ~autocomplete: [@bs.string] [
       | `on
       | `off
@@ -21,7 +23,7 @@ external make:
       | `_parent
       | `_top
     ],
-    
+
     ~checkDelay: int=?,
     ~checkTrigger: [@bs.string] [
       | `change
