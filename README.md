@@ -15,9 +15,9 @@
 
 1. Cover all documented components ✅
 2. Compare with official GitHub repo 
-3. Check TODOs, fixes
-4. Example project
-5. Improve DX (reuse, variants instead string as possible and etc.)
+3. Check TODOs, fixes ⌛
+4. Example project ⌛
+5. Improve DX (reuse, variants instead string as possible and etc.) ⌛
 6. Tests, codegen
 
 ## Roadmap
@@ -165,7 +165,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
   ()
  );
  
- <RsuiteUi.CheckPicker data={[|item|]]} />
+ <RsuiteUi.CheckPicker data={[item]]} />
 ```
 
 **Animation**
@@ -189,6 +189,44 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
   </RsuiteUi.Animation.Bounce> 
 ```
 
+**Table**
+
+```reason 
+  let items = [{
+    "name": "some name",
+    "description": "some description"
+  }, {
+    "name": "some name",
+    "description": "some description"
+  }];
+
+  // where `dataKey` is keyof items (<Table.Cell dataKey={..}>)
+  RsuiteUi.(
+    <Table
+            height={420}
+            data={items}
+            onSortColumn={(sortColumn, sortType) => {
+              Js.log(sortColumn);
+            }}
+          >
+            <Table.Column width={50} align=`center>
+              <Table.HeaderCell>
+                {React.string("Name")}
+              </Table.HeaderCell>
+
+              <Table.Cell dataKey="name" />
+            </Table.Column>
+
+            <Table.Column width={100} flexGrow={2}>
+              <Table.HeaderCell>
+                 {React.string("Description")}
+              </Table.HeaderCell>
+
+              <Table.Cell dataKey="description" />
+            </Table.Column>
+          </Table>
+    );
+```
 
 
 **Modal**
