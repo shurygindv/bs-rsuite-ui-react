@@ -6,6 +6,21 @@ external make:
     ~children: React.element=?,
     ~classPrefix: string=?,
     ~className: string=?,
+    ~action: string=?,
+    ~autocomplete: [@bs.string] [
+      | `on
+      | `off
+    ],
+    ~method: [@bs.string] [
+      | `get
+      | `post
+    ],
+    ~target: [@bs.string] [
+      | `_blank
+      | `_self
+      | `_parent
+      | `_top
+    ],
     
     ~checkDelay: int=?,
     ~checkTrigger: [@bs.string] [
@@ -25,6 +40,7 @@ external make:
     ~formDefaultValue: 'a=?,
     ~formValue: 'a=?,
     ~onChange: ('a) => unit=?,
+    ~onSubmit: (ReactEvent.Form.t) => unit,
     ~onCheck: ('a, 'b) => unit=?,
     ~onError: ('a) => unit=?,
     /* todo
