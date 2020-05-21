@@ -24,10 +24,10 @@
     "bs:clean": "bsb -clean-world"
   },
   "devDependencies": {
-    "bs-platform": "^5.0.6",
-    "reason-react": "~0.7.0"
+    "bs-platform": "^5.0.6"
   },
   "dependencies": {
+    "reason-react": "^0.8.0",
     "rsuite": "^4.4.1"
   }
 }
