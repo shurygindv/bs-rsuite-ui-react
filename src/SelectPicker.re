@@ -15,7 +15,7 @@
         | `default
         | `subtle
       ]=?,
-      ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
+      ~cacheData: list(RsuiteTypes.DataItemType.t)=?,
       ~block: bool=?,
       ~cleanable: bool=?,
       ~disabled: bool=?,

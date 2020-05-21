@@ -3,7 +3,7 @@
   [@bs.module "rsuite"] [@react.component]
   external make:
     (
-      ~data: array(RsuiteTypes.DataItemType.t),
+      ~data: list(RsuiteTypes.DataItemType.t),
 
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
@@ -25,20 +25,20 @@
       ~virtualized: bool=?,
       ~preventOverflow: bool=?,
       ~container: Dom.element=?, // TODO
-      ~uncheckableItemValues: array(string)=?,
+      ~uncheckableItemValues: list(string)=?,
       ~defaultValue: string=?,
       ~defaultExpandAll: bool=?,
       ~defaultExpandItemValues: string=?,
-      ~disabledItemValues: array(string)=?,
-      ~expandItemValues: array(string)=?, // TODO
+      ~disabledItemValues: list(string)=?,
+      ~expandItemValues: list(string)=?, // TODO
       ~labelKey: string=?,
       ~height: int=?,
-      ~value: array(string)=?,
+      ~value: list(string)=?,
       ~valueKey: string=?,
       ~menuClassName: string=?,
-      ~onExpand: (array(string), RsuiteTypes.DataItemType.t) => unit=?, // TODO: misunderstanding
+      ~onExpand: (list(string), RsuiteTypes.DataItemType.t) => unit=?, // TODO: misunderstanding
       ~onClose: unit => unit=?,
-      ~onChange: (array(string), ReactEvent.Synthetic.t) => unit=?,
+      ~onChange: (list(string), ReactEvent.Synthetic.t) => unit=?,
       ~onOpen: unit => unit=?,
       ~onSearch: (string, ReactEvent.Form.t) => unit=?,
       ~onSelect: (RsuiteTypes.DataItemType.t, string, ReactEvent.Synthetic.t) => unit=?,
@@ -62,9 +62,9 @@
         | `bottomEnd
       ]=?,
       ~renderMenu: React.element => React.element=?,
-      ~renderTreeIcon: (array(int)) => React.element=?, // TODO: check
-      ~renderTreeNode: (array(RsuiteTypes.DataItemType.t)) => React.element=?,
-      ~renderValue: (array(string), RsuiteTypes.DataItemType.t, React.element) => React.element=?,
+      ~renderTreeIcon: (list(int)) => React.element=?, // TODO: check
+      ~renderTreeNode: (list(RsuiteTypes.DataItemType.t)) => React.element=?,
+      ~renderValue: (list(string), RsuiteTypes.DataItemType.t, React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~toggleComponentClass: unit => React.element=?,
       ~size: [@bs.string] [

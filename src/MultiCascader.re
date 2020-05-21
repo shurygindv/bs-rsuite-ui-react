@@ -16,7 +16,7 @@
         | `default
         | `subtle
       ]=?,
-      ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
+      ~cacheData: list(RsuiteTypes.DataItemType.t)=?,
       ~block: bool=?,
       ~cleanable: bool=?,
       ~disabled: bool=?,
@@ -27,7 +27,7 @@
       ~defaultValue: string=?,
       ~defaultOpen: bool=?,
       ~disabledItemValues: string=?,
-      ~uncheckableItemValues: array(string)=?,
+      ~uncheckableItemValues: list(string)=?,
       ~labelKey: string=?,
       ~value: string=?,
       ~menuHeight: int=?,
@@ -35,10 +35,10 @@
       ~height: int=?,
       ~valueKey: string=?,
       ~onClose: unit => unit=?,
-      ~onChange: (array(string), ReactEvent.Synthetic.t) => unit=?,
+      ~onChange: (list(string), ReactEvent.Synthetic.t) => unit=?,
       ~onOpen: unit => unit=?,
       ~onSearch: (string, ReactEvent.Form.t) => unit=?,
-      ~onSelect: (RsuiteTypes.DataItemType.t, array(string), ReactEvent.Synthetic.t) => unit=?, // TODO
+      ~onSelect: (RsuiteTypes.DataItemType.t, list(string), ReactEvent.Synthetic.t) => unit=?, // TODO
       ~onClean: (ReactEvent.Synthetic.t) => unit=?,
       ~onGroupTitleClick: (ReactEvent.Synthetic.t) => unit=?,
       ~placeholder: React.element=?,
@@ -59,9 +59,9 @@
         | `bottomStart
         | `bottomEnd
       ]=?,
-      ~renderMenu: (array(string), React.element, Dom.element) => React.element=?, // TODO: check `Object type
+      ~renderMenu: (list(string), React.element, Dom.element) => React.element=?, // TODO: check `Object type
       ~renderMenuItem: (React.element, RsuiteTypes.DataItemType.t) => React.element=?,
-      ~renderValue: (string, array(string), React.element) => React.element=?,
+      ~renderValue: (string, list(string), React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~toggleComponentClass: unit => React.element=?,
       ~size: [@bs.string] [
