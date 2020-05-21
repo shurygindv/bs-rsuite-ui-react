@@ -26,6 +26,8 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     ~placeholder: string=?,
+    ~pattern: string=?,
+    ~required: bool=?,
     
     ~defaultValue: int=?,
     ~value: string=?,

@@ -1,7 +1,7 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
-    ~data: array(Js.Dict.t('a)),
+    ~data: list('a),
 
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
@@ -18,8 +18,8 @@ external make:
     ~rowKey: string=?, // TODO: obj
     ~isTree: bool=?,
     ~defaultExpandAllRows: bool=?,
-    ~defaultExpandedRowKeys: array(Js.Dict.t('a))=?,
-    ~expandedRowKeys: array(Js.Dict.t('a))=?,
+    ~defaultExpandedRowKeys: list(string)=?,
+    ~expandedRowKeys: list(string)=?,
     ~rowExpandedHeight: int=?,
     ~sortColumn: string=?,
     ~sortType: [@bs.string] [ | `desc | `asc]=?,
@@ -98,7 +98,7 @@ module Pagination = {
       ~displayLength: int=?,
       ~first: bool=?,
       ~last: bool=?,
-      ~lengthMenu: array(RsuiteTypes.MenuItem.t)=?,
+      ~lengthMenu: list(RsuiteTypes.MenuItem.t)=?,
       ~maxButtons: int=?,
       ~next: bool=?,
       ~onChangeLength: int => unit=?,

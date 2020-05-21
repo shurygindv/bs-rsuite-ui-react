@@ -2,7 +2,7 @@
   [@bs.module "rsuite"] [@react.component]
   external make:
     (
-      ~data: array(RsuiteTypes.DataItemType.t),
+      ~data: list(RsuiteTypes.DataItemType.t),
 
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
@@ -15,7 +15,7 @@
         | `default
         | `subtle
       ]=?,
-      ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
+      ~cacheData: list(RsuiteTypes.DataItemType.t)=?,
       ~block: bool=?,
       ~cleanable: bool=?,
       ~disabled: bool=?,
@@ -37,7 +37,7 @@
       ~valueKey: string=?,
       ~menuClassName: string=?,
       ~maxHeight: int=?,
-      ~onExpand: (array(string), RsuiteTypes.DataItemType.t) => unit=?, // TODO: misunderstanding
+      ~onExpand: (list(string), RsuiteTypes.DataItemType.t) => unit=?, // TODO: misunderstanding
       ~onClose: unit => unit=?,
       ~onChange: (string, ReactEvent.Synthetic.t) => unit=?,
       ~onOpen: unit => unit=?,

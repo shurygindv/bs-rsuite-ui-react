@@ -3,7 +3,7 @@
   [@bs.module "rsuite"] [@react.component]
   external make:
     (
-      ~data: array(RsuiteTypes.DataItemType.t),
+      ~data: list(RsuiteTypes.DataItemType.t),
 
       ~style: ReactDOMRe.Style.t=?,
       ~children: React.element=?,
@@ -11,7 +11,7 @@
       ~className: string=?,
       
       ~menuStyle: ReactDOMRe.Style.t=?,
-      ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
+      ~cacheData: list(RsuiteTypes.DataItemType.t)=?,
       ~block: bool=?,
       ~cleanable: bool=?,
       ~container: Dom.element=?, // TODO
@@ -55,7 +55,7 @@
       ~renderMenu: React.element => React.element=?,
       ~renderMenuGroup: (React.element, RsuiteTypes.DataItemType.t) => React.element=?,
       ~renderMenuItem: (React.element, RsuiteTypes.DataItemType.t) => React.element=?,
-      ~renderValue: (array(string), array(RsuiteTypes.DataItemType.t), React.element) => React.element=?,
+      ~renderValue: (list(string), list(RsuiteTypes.DataItemType.t), React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~sort: bool => (string, string) => int=?, // TODO
       ~toggleComponentClass: unit => React.element=?,

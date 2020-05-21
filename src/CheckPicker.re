@@ -1,7 +1,7 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
-    ~data: array(RsuiteTypes.DataItemType.t),
+    ~data: list(RsuiteTypes.DataItemType.t),
 
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
@@ -10,7 +10,7 @@ external make:
     
     ~menuStyle: ReactDOMRe.Style.t=?,
     ~appearance: [@bs.string] [ | `default | `subtle]=?,
-    ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
+    ~cacheData: list(RsuiteTypes.DataItemType.t)=?,
     ~block: bool=?,
     ~cleanable: bool=?,
     ~disabled: bool=?,
@@ -59,8 +59,8 @@ external make:
                      React.element
                        =?,
     ~renderValue: (
-                    array(string),
-                    array(RsuiteTypes.DataItemType.t),
+                    list(string),
+                    list(RsuiteTypes.DataItemType.t),
                     React.element
                   ) =>
                   React.element
