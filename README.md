@@ -94,6 +94,7 @@
 |   :-:          | ------------------------------------|   :-:   |
 |  Utils         | `<Animation />`                     |   ✅   |
 |  Utils         | `<Portal />`                        |   ✅   |
+|  Utils         | `Schema module`                     |   🛑   |
 |  Utils         | `DOMHelper module`                  |   ✅   |
 |   :-:          | ------------------------------------|   :-:   |
 |  Undocumented  | `<SafeAnchor />`                    |   ✅   |
