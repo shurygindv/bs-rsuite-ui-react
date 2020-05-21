@@ -10,8 +10,10 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     ~componentClass: string=?,
-    ~rows: int=?,
-    
+    ~pattern: string=?,
+    ~required: bool=?,
+
+    ~rows: int=?,    
     ~accepter: unit => React.element=?,
     ~checkTrigger: [@bs.string] [
                   | `change
