@@ -104,14 +104,14 @@
 **I**. Add `bs-rsuite-ui-react` binding as dependency 
 
 ```
-yarn add "https://github.com/shurygindv/bs-rsuite-ui-react.git"
+npm i bs-rsuite-ui-react
 or
 yarn add bs-rsuite-ui-react
 or
-npm i bs-rsuite-ui-react
+yarn add "https://github.com/shurygindv/bs-rsuite-ui-react.git"
 ```
 
-**II**. Also we need to say `bsb`: heey, look! Seems, `bs-rsuite-ui-react` perfectly complements you, let's add it to `bs-dependencies
+**II**. Also we need to say `bsb`: heey, look! Seems, `bs-rsuite-ui-react` perfectly complements you, let's add it to `bs-dependencies`
 
 `...somewhere in your bsconfig.json: `
 ```reason
@@ -152,6 +152,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
  RsuiteUi.Notification.success(RsuiteUi.Notification.Props.make(
    ~title = React.string("I'm title"),
    ~description = React.string("I'm desc"),
+   ~placement="bottomStart",
    ()
  ));
 ```
@@ -165,16 +166,16 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
   ()
  );
  
- <RsuiteUi.CheckPicker data={[item]]} />
+ <RsuiteUi.CheckPicker data={[item]} />
 ```
 
 **Animation**
 
 ```reason 
-  let (isVisible, setVisibility) = React.useState(() => false);
+  let (isVisible, setVisibility) = React.useState(_ => false);
 
-  React.useEffect0(() => {
-    Js.Global.setTimeout(() => {
+  React.useEffect0(_ => {
+    Js.Global.setTimeout(_ => {
       setVisibility(_ => true);
     }, 200);
     None
@@ -184,7 +185,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
     _in={isVisible}
   >
     <div>
-      {React.string("An")}
+      {React.string("look at me")}
     </div>
   </RsuiteUi.Animation.Bounce> 
 ```
@@ -202,29 +203,29 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
 
   // where `dataKey` is keyof items (<Table.Cell dataKey={..}>)
   RsuiteUi.(
-    <Table
-            height={420}
-            data={items}
-            onSortColumn={(sortColumn, sortType) => {
-              Js.log(sortColumn);
-            }}
-          >
-            <Table.Column width={50} align=`center>
-              <Table.HeaderCell>
-                {React.string("Name")}
-              </Table.HeaderCell>
+      <Table
+          height={420}
+          data={items}
+          onSortColumn={(sortColumn, _sortType) => {
+            Js.log(sortColumn);
+          }}
+        >
+          <Table.Column width={50} align=`center>
+            <Table.HeaderCell>
+              {React.string("Name")}
+            </Table.HeaderCell>
 
-              <Table.Cell dataKey="name" />
-            </Table.Column>
+            <Table.Cell dataKey="name" />
+          </Table.Column>
 
-            <Table.Column width={100} flexGrow={2}>
-              <Table.HeaderCell>
-                 {React.string("Description")}
-              </Table.HeaderCell>
+          <Table.Column width={100} flexGrow={2}>
+            <Table.HeaderCell>
+               {React.string("Description")}
+            </Table.HeaderCell>
 
-              <Table.Cell dataKey="description" />
-            </Table.Column>
-          </Table>
+            <Table.Cell dataKey="description" />
+          </Table.Column>
+      </Table>
     );
 ```
 
