@@ -31,8 +31,8 @@ external make:
     ~renderTreeIcon: (RsuiteTypes.DataItemType.t) => React.element=?,
     
     ~searchKeyword: string=?,
-    ~uncheckableItemValues: list(string)=?,
-    ~value: list(string)=?,
+    ~uncheckableItemValues: array(string)=?,
+    ~value: array(string)=?,
     ~valueKey: string=?,
     ~virtualized: bool=?,
   ) =>
