@@ -164,7 +164,7 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
   ()
  );
 
- <RsuiteUi.CheckPicker data={[item]} />
+ <RsuiteUi.CheckPicker data={[|item|]} />
 ```
 
 **Animation**
@@ -191,13 +191,13 @@ All bindings are in `RsuiteUi` namespace, let's try! Some **examples**
 **Table**
 
 ```reason
-  let items = [{
+  let items = [|{
     "name": "some name",
     "description": "some description"
   }, {
     "name": "some name",
     "description": "some description"
-  }];
+  }|];
 
   // where `dataKey` is keyof items (<Table.Cell dataKey={..}>)
   RsuiteUi.(
@@ -313,7 +313,7 @@ All contributions are welcomed.
 
 **5**. Why do we use an array structure instead of a immutable list everywhere?
 
-ReasonML lists are represented as nested 2-element arrays in JavaScript (an encoding of cons pairs).
+- ReasonML lists are represented as nested 2-element arrays in JavaScript (an encoding of cons pairs).
 
 And many other useful details about Reason React here!
 See: https://github.com/reasonml/reason-react/tree/master/docs
