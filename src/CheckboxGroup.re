@@ -6,7 +6,7 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     
-    ~defaultValue: list(string)=?,
+    ~defaultValue: array(string)=?,
     ~name: string=?,
     ~value: string=?,
     ~inline: bool=?,

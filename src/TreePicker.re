@@ -15,7 +15,7 @@
         | `default
         | `subtle
       ]=?,
-      ~cacheData: list(RsuiteTypes.DataItemType.t)=?,
+      ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
       ~block: bool=?,
       ~cleanable: bool=?,
       ~disabled: bool=?,
@@ -37,7 +37,7 @@
       ~valueKey: string=?,
       ~menuClassName: string=?,
       ~maxHeight: int=?,
-      ~onExpand: (list(string), RsuiteTypes.DataItemType.t) => unit=?, // TODO: misunderstanding
+      ~onExpand: (array(string), RsuiteTypes.DataItemType.t) => unit=?, // TODO: misunderstanding
       ~onClose: unit => unit=?,
       ~onChange: (string, ReactEvent.Synthetic.t) => unit=?,
       ~onOpen: unit => unit=?,

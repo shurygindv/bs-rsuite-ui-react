@@ -10,7 +10,7 @@ external make:
     
     ~menuStyle: ReactDOMRe.Style.t=?,
     ~appearance: [@bs.string] [ | `default | `subtle]=?,
-    ~cacheData: list(RsuiteTypes.DataItemType.t)=?,
+    ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
     ~block: bool=?,
     ~cleanable: bool=?,
     ~disabled: bool=?,
@@ -59,8 +59,8 @@ external make:
                      React.element
                        =?,
     ~renderValue: (
-                    list(string),
-                    list(RsuiteTypes.DataItemType.t),
+                    array(string),
+                    array(RsuiteTypes.DataItemType.t),
                     React.element
                   ) =>
                   React.element

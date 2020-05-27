@@ -23,7 +23,7 @@ external make:
     ~onExpand: (
       array(string), 
       RsuiteTypes.DataItemType.t,
-      ('a, React.element) => list('a)
+      ('a, React.element) => array('a)
     ) => unit=?,
 
     ~onSelect: (RsuiteTypes.DataItemType.t, string, ReactEvent.Synthetic.t) => unit=?,
