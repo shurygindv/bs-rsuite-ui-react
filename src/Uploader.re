@@ -13,10 +13,10 @@
       ~accept: string=?,
       ~autoUpload: bool=?,
       ~data: Js.Dict.t('a)=?,
-      ~defaultFileList: list(RsuiteTypes.FileType.t)=?,
+      ~defaultFileList: array(RsuiteTypes.FileType.t)=?,
       ~disabled: bool=?,
       ~disabledFileItem: bool=?,
-      ~fileList: list(RsuiteTypes.FileType.t)=?,
+      ~fileList: array(RsuiteTypes.FileType.t)=?,
       ~headers: Js.Dict.t('a)=?,
       ~listType: [@bs.string] [
         | `text
@@ -26,7 +26,7 @@
       ~maxPreviewFileSize: int=?,
       ~multiple: bool=?,
       ~name: string=?,
-      ~onChange: (list(RsuiteTypes.FileType.t)) => unit=?,
+      ~onChange: (array(RsuiteTypes.FileType.t)) => unit=?,
       ~onError: (Js.Dict.t('a), RsuiteTypes.FileType.t) => unit=?,
       ~onPreview: (RsuiteTypes.FileType.t, ReactEvent.Synthetic.t) => unit=?,
       ~onProgress: (int, RsuiteTypes.FileType.t) => unit=?,
@@ -40,8 +40,8 @@
       ) => React.element=?,
       ~removable: bool=?,
       ~shouldQueueUpdate: (
-        list(RsuiteTypes.FileType.t),
-        list(RsuiteTypes.FileType.t),
+        array(RsuiteTypes.FileType.t),
+        array(RsuiteTypes.FileType.t),
         RsuiteTypes.FileType.t
       ) => bool=?,
       ~shouldUpload: (RsuiteTypes.FileType.t) => bool=?,

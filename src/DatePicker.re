@@ -63,7 +63,7 @@ external make:
       | `bottomEnd
     ]=?,
     ~preventOverflow: bool=?,
-    ~ranges: list(RsuiteTypes.Range.t)=?,
+    ~ranges: array(RsuiteTypes.Range.t)=?,
     ~showWeekNumbers: bool=?,
     ~toggleComponentClass: unit => React.element=?,
     ~value: Js.Date.t=?
