@@ -1,7 +1,7 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
-    ~data: array(Js.Dict.t('a)),
+    ~data: array('a),
 
     ~style: ReactDOMRe.Style.t=?,
     ~children: React.element=?,
@@ -18,8 +18,8 @@ external make:
     ~rowKey: string=?, // TODO: obj
     ~isTree: bool=?,
     ~defaultExpandAllRows: bool=?,
-    ~defaultExpandedRowKeys: array(Js.Dict.t('a))=?,
-    ~expandedRowKeys: array(Js.Dict.t('a))=?,
+    ~defaultExpandedRowKeys: array('a)=?,
+    ~expandedRowKeys: array('a)=?,
     ~rowExpandedHeight: int=?,
     ~sortColumn: string=?,
     ~sortType: [@bs.string] [ | `desc | `asc]=?,
