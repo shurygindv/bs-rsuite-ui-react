@@ -15,7 +15,7 @@ p.s bindings from an enthusiast 🙂
 1. Cover all documented components ✅
 2. Compare with official GitHub repo
 3. Check TODOs, fixes ⌛
-4. Example project ⌛
+4. [Example project](https://github.com/shurygindv/vote-system-frontend) ✅
 5. Improve DX (reuse, variants instead string as possible and etc.) ⌛
 6. Tests, codegen
 
