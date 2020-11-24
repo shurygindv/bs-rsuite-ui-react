@@ -5,6 +5,8 @@ external make:
     ~children: React.element=?,
     ~classPrefix: string=?,
     ~className: string=?,
+    ~maxItems: int=?,
+    ~onExpand: ReactEvent.Mouse.t => unit=?,
     
     ~separator: React.element=?
   ) =>
