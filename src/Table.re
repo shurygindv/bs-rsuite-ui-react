@@ -39,7 +39,8 @@ external make:
     ~renderTreeToggle: (React.element, Js.Dict.t('a)) => React.element=?,
     ~renderRowExpanded: Js.Dict.t('a) => React.element=?,
     ~renderEmpty: React.element => React.element=?,
-    ~renderLoading: React.element => React.element=?
+    ~renderLoading: React.element => React.element=?,
+    ~shouldUpdateScroll: bool=?,
   ) =>
   React.element =
   "Table";
