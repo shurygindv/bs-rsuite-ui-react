@@ -85,6 +85,7 @@ p.s bindings from an enthusiast 🙂
 | Data Display | `<Tag />;<TagGroup/>`                |   ✅   |
 | Data Display | `<List />`                           |   ✅   |
 | Data Display | `<Calendar />`                       |   ✅   |
+| Data Display | `<Carousel />`                       |   ✅   |
 |     :-:      | ------------------------------------ |  :-:   |
 |    Layout    | `<Grid />`; `<Row />`; `<Col />`     |   ✅   |
 |    Layout    | `<FlexboxGrid />`                    |   ✅   |
