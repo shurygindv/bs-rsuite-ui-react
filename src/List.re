@@ -11,7 +11,7 @@ external make:
     ~bordered: bool=?,
     ~hover: bool=?,
     ~sortable: bool=?,
-    ~size: [@bs.string] [ | `lg | `md | `sm]=?,
+    ~size:  [ | `lg | `md | `sm]=?,
     ~autoScroll: bool=?,
     ~pressDelay: int=?,
     ~transitionDuration: int=?,

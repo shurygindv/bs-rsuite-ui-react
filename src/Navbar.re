@@ -7,7 +7,7 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     ~componentClass: 'a=> React.element=?,
-    ~appearance: [@bs.string] [ | `default | `inverse | `subtle]=?
+    ~appearance:  [ | `default | `inverse | `subtle]=?
   ) =>
   React.element =
   "Navbar";

@@ -32,8 +32,8 @@ external make:
     ~defaultValue: int=?,
     ~value: string=?,
     ~disabled: bool=?,
-    ~_type: [@bs.string] [ | `text | `password | `number | `checkbox | `tel | `hidden  | `date | `color | `email | `time ]=?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?,
+    ~_type:  [ | `text | `password | `number | `checkbox | `tel | `hidden  | `date | `color | `email | `time ]=?,
+    ~size:  [ | `lg | `md | `sm | `xs]=?,
     ~inputRef: ReactDOMRe.Ref.t=?,
 
     ~onPressEnter: ReactEvent.Keyboard.t => unit=?,

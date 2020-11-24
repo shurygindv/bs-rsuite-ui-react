@@ -8,7 +8,7 @@ external make:
     
     ~circle: bool=?,
     ~icon: React.element=?,
-    ~placement: [@bs.string] [
+    ~placement:  [
                   | `left
                   | `leftStart
                   | `leftEnd

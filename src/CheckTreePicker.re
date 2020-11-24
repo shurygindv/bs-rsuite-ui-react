@@ -12,7 +12,7 @@
 
       ~menuStyle: ReactDOMRe.Style.t=?,
       ~childrenKey: string=?,
-      ~appearance: [@bs.string] [
+      ~appearance:  [
         | `default
         | `subtle
       ]=?,
@@ -44,7 +44,7 @@
       ~onSelect: (RsuiteTypes.DataItemType.t, string, ReactEvent.Synthetic.t) => unit=?,
       ~onClean: (ReactEvent.Synthetic.t) => unit=?,
       ~placeholder: React.element=?,
-      ~placement: [@bs.string] [
+      ~placement:  [
         | `left
         | `leftStart
         | `leftEnd
@@ -67,7 +67,7 @@
       ~renderValue: (array(string), RsuiteTypes.DataItemType.t, React.element) => React.element=?,
       ~renderExtraFooter: unit => React.element=?,
       ~toggleComponentClass: unit => React.element=?,
-      ~size: [@bs.string] [
+      ~size:  [
                     | `lg
                     | `md
                     | `sm

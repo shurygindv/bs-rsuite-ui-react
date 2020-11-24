@@ -6,7 +6,7 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     
-    ~appearance: [@bs.string] [
+    ~appearance:  [
       | `default
       | `picker
     ]=?,

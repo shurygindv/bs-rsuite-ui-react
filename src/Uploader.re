@@ -18,7 +18,7 @@
       ~disabledFileItem: bool=?,
       ~fileList: array(RsuiteTypes.FileType.t)=?,
       ~headers: Js.Dict.t('a)=?,
-      ~listType: [@bs.string] [
+      ~listType:  [
         | `text
         | `picture
         | `pictureText

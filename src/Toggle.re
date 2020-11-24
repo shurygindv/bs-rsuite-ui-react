@@ -14,7 +14,7 @@ external make: (
   ~defaultChecked: bool=?,
   ~disabled: bool=?,
   ~onChange: (bool, ReactEvent.Synthetic.t) => unit=?,
-  ~size: [@bs.string] [
+  ~size:  [
     | `lg
     | `md
     | `sm

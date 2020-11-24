@@ -15,14 +15,14 @@ external make:
 
     ~rows: int=?,    
     ~accepter: unit => React.element=?,
-    ~checkTrigger: [@bs.string] [
+    ~checkTrigger:  [
                   | `change
                   | `blur
                   | `none
                 ]
      =?,
      ~errorMessage: React.element=?,
-     ~placement: [@bs.string] [
+     ~placement:  [
       | `left
       | `leftStart
       | `leftEnd
@@ -41,7 +41,7 @@ external make:
     ]=?,
     ~readonly: bool=?,
     ~plaintext: bool=?,
-    ~_type: [@bs.string] [ | `text | `password | `number | `checkbox | `tel | `hidden  | `date | `color | `email | `time ]=?,
+    ~_type:  [ | `text | `password | `number | `checkbox | `tel | `hidden  | `date | `color | `email | `time ]=?,
   ) =>
   React.element =
   "FormControl";

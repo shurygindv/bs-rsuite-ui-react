@@ -7,7 +7,7 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     
-    ~appearance: [@bs.string] [
+    ~appearance:  [
       | `default
       | `subtle
     ]=?,
@@ -45,7 +45,7 @@ external make:
     ~oneTap: bool=?,
     ~_open: bool=?,
     ~placeholder: string=?,
-    ~placement: [@bs.string] [
+    ~placement:  [
       | `left
       | `leftStart
       | `leftEnd

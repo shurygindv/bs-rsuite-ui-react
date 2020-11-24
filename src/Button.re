@@ -1,7 +1,7 @@
 [@bs.module "rsuite"] [@react.component]
 external make:
   (
-    ~_type: [@bs.string] [
+    ~_type:  [
       | `submit
       | `button
       | `reset
@@ -17,7 +17,7 @@ external make:
     ~block: bool=?,
     ~href: string=?,
     ~componentClass: 'a=> React.element=?,
-    ~appearance: [@bs.string] [
+    ~appearance:  [
                    | `primary
                    | `link
                    | `subtle
@@ -25,7 +25,7 @@ external make:
                    | `ghost
                  ]
                    =?,
-    ~color: [@bs.string] [
+    ~color:  [
               | `red
               | `orange
               | `yellow
@@ -35,7 +35,7 @@ external make:
               | `violet
             ]
               =?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?,
+    ~size:  [ | `lg | `md | `sm | `xs]=?,
     ~onClick: ReactEvent.Mouse.t => unit=?,
   ) =>
   React.element =

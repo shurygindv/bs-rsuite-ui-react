@@ -34,10 +34,10 @@ external make: (
   ~rotate: int=?,
   ~fixedWidth: bool=?,
   ~icon: string=?, // TODO: or SVGIcon {id, view}
-  ~size: [@bs.string] [
+  ~size:  [
     | `lg
   ]=?,
-  ~flip: [@bs.string] [
+  ~flip:  [
     | `vertical
     | `horizontal
   ]=?,

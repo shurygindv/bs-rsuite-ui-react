@@ -13,7 +13,7 @@ external make:
     ~onOpenChange: (array(string), ReactEvent.Synthetic.t) => unit=?,
     ~onSelect: (array(string), ReactEvent.Synthetic.t) => unit=?,
     ~componentClass: 'a=> React.element=?,
-    ~appearance: [@bs.string] [
+    ~appearance:  [
                   | `default
                   | `inverse
                   | `subtle

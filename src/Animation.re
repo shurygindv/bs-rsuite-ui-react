@@ -38,7 +38,7 @@ module Collapse = {
       ~children: React.element=?,
       ~className: string=?,
 
-      ~dimension: [@bs.string] [
+      ~dimension: [
           | `height
           | `width
       ]=?, // todo + callback () => `height | `width
@@ -120,7 +120,7 @@ module Slide = {
       ~timeout: int=?,
       ~transitionAppear: bool=?,
       ~unmountOnExit: bool=?,
-      ~placement: [@bs.string] [
+      ~placement: [
         | `left
         | `leftStart
         | `leftEnd

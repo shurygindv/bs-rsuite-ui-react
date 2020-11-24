@@ -17,7 +17,7 @@ external make: (
   ~onClick: ReactEvent.Mouse.t => unit=?,
   ~onFocus: ReactEvent.Focus.t => unit=?,
   ~onMouseOut: ReactEvent.Mouse.t => unit=?, 
-  ~placement: [@bs.string] [
+  ~placement:  [
     | `left
     | `leftStart
     | `leftEnd
@@ -34,7 +34,7 @@ external make: (
     | `bottomStart
     | `bottomEnd
   ]=?,
-  ~trigger: [@bs.string] [
+  ~trigger:  [
     | //   TODO
       `click
     | `hover

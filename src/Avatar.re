@@ -9,7 +9,7 @@ external make: (
     ~src: string=?,
     ~alt: string=?,
     ~circle: bool=?,
-    ~size: [@bs.string] [
+    ~size: [
       | `lg
       | `md
       | `sm
