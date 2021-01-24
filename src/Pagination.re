@@ -5,6 +5,7 @@ external make: (
   ~children: React.element=?,
   ~classPrefix: string=?,
   ~className: string=?,
+  ~_as: string,
   
   ~activePage: int=?,
   ~maxButtons: int=?,
@@ -16,5 +17,5 @@ external make: (
   ~last: bool=?,
   ~next: bool=?,
   ~prev: bool=?,
-  ~buttonComponentClass: unit => React.element=?,
+  ~onSelect: (int, ReactEvent.Mouse.t) => unit=?,
 ) => React.element = "Pagination";
