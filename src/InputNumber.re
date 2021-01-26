@@ -15,7 +15,7 @@ external make:
     ~postfix: React.element=?,
     ~prefix: React.element=?,
     ~onChange: (int, ReactEvent.Synthetic.t) => unit=?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?
+    ~size:  [ | `lg | `md | `sm | `xs]=?
   ) =>
   React.element =
   "InputNumber";

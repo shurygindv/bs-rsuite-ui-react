@@ -14,7 +14,7 @@ external make:
     ~icon: React.element=?,
     ~onSelect: (string, ReactEvent.Synthetic.t) => unit=?,
     ~onToggle: bool => unit=?,
-    ~placement: [@bs.string] [
+    ~placement:  [
                   | `left
                   | `leftStart
                   | `leftEnd
@@ -33,7 +33,7 @@ external make:
     ~title: React.element=?,
     ~toggleClassName: string=?,
     ~toggleComponentClass: unit => React.element=?,
-    ~trigger: [@bs.string] [
+    ~trigger:  [
                 | `click
                 | `hover
                 | `contextMenu //   TODO

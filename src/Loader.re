@@ -11,8 +11,8 @@ external make:
     ~inverse: bool=?,
     ~vertical: bool=?,
     ~content: React.element=?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?,
-    ~speed: [@bs.string] [ | `fast | `normal | `slow]=?,
+    ~size:  [ | `lg | `md | `sm | `xs]=?,
+    ~speed:  [ | `fast | `normal | `slow]=?,
 
     ~onClick: ReactEvent.Mouse.t => unit=?,
   ) =>

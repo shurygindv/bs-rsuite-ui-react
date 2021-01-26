@@ -22,8 +22,8 @@ external make:
     ~expandedRowKeys: array('a)=?,
     ~rowExpandedHeight: int=?,
     ~sortColumn: string=?,
-    ~sortType: [@bs.string] [ | `desc | `asc]=?,
-    ~defaultSortType: [@bs.string] [ | `desc | `asc]=?,
+    ~sortType:  [ | `desc | `asc]=?,
+    ~defaultSortType:  [ | `desc | `asc]=?,
     ~loading: bool=?,
     ~bordered: bool=?,
     ~cellBordered: bool=?,
@@ -54,15 +54,15 @@ module Column = {
       ~classPrefix: string=?,
       ~className: string=?,
 
-      ~align: [@bs.string] [ | `left | `center | `right]=?,
+      ~align:  [ | `left | `center | `right]=?,
       ~colSpan: int=?,
-      ~fixed: [@bs.string] [ | `left | `right]=?, // TODO: +bool type
+      ~fixed:  [ | `left | `right]=?, // TODO: +bool type
       ~flexGrow: int=?,
       ~minWidth: int=?,
       ~onResize: (Js.undefined(int), Js.undefined(string)) => unit=?,
       ~resizable: bool=?,
       ~sortable: bool=?,
-      ~verticalAlign: [@bs.string] [ | `top | `middle | `bottom]=?,
+      ~verticalAlign:  [ | `top | `middle | `bottom]=?,
       ~width: int=?
     ) =>
     React.element =

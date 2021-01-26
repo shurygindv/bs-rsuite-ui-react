@@ -41,7 +41,7 @@
       ~renderExtraFooter: unit => React.element=?,
       ~sort: bool => (string, string) => int=?, // TODO
       ~toggleComponentClass: unit => React.element=?,
-      ~size: [@bs.string] [
+      ~size:  [
                     | `lg
                     | `md
                     | `sm

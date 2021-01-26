@@ -5,10 +5,10 @@ external make:
     ~children: React.element=?,
     ~classPrefix: string=?,
     ~className: string=?,
-    ~align: [@bs.string] [ | `top | `middle | `bottom]=?,
-    ~justify: [@bs.string] [
+    ~align:  [ | `top | `middle | `bottom]=?,
+    ~justify:  [
                 | `start
-                | [@bs.as "end"] `end_
+                | `end_
                 | `center
                 | `spaceAround
                 | `spaceBetween

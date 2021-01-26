@@ -10,7 +10,7 @@ module Line = {
       ~showInfo: bool=?,
       ~strokeWidth: int=?,
       ~strokeColor: string=?,
-      ~status: [@bs.string] [ | `active | `fail | `success]=?
+      ~status:  [ | `active | `fail | `success]=?
     ) =>
     React.element =
     "Line";
@@ -30,11 +30,11 @@ module Circle = {
       ~strokeWidth: int=?,
       ~strokeColor: string=?,
       /* gapDegree: ???=?, */
-      ~strokeLinecap: [@bs.string] [ | `round | `square | `butt]=?,
-      ~gapPosition: [@bs.string] [ | `right | `left | `top | `bottom]=?,
+      ~strokeLinecap:  [ | `round | `square | `butt]=?,
+      ~gapPosition:  [ | `right | `left | `top | `bottom]=?,
       ~trailColor: string=?,
       ~trailWidth: int=?,
-      ~status: [@bs.string] [ | `active | `fail | `success]=?
+      ~status:  [ | `active | `fail | `success]=?
     ) =>
     React.element =
     "Circle";

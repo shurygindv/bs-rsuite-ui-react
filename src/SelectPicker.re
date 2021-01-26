@@ -11,7 +11,7 @@
       ~className: string=?,
       
       ~menuStyle: ReactDOMRe.Style.t=?,
-      ~appearance: [@bs.string] [
+      ~appearance:  [
         | `default
         | `subtle
       ]=?,
@@ -38,7 +38,7 @@
       ~onClean: (ReactEvent.Synthetic.t) => unit=?,
       ~onGroupTitleClick: (ReactEvent.Synthetic.t) => unit=?,
       ~placeholder: React.element=?,
-      ~placement: [@bs.string] [
+      ~placement:  [
         | `left
         | `leftStart
         | `leftEnd
@@ -62,7 +62,7 @@
       ~renderExtraFooter: unit => React.element=?,
       ~sort: bool => (string, string) => int=?, // TODO
       ~toggleComponentClass: unit => React.element=?,
-      ~size: [@bs.string] [
+      ~size:  [
                     | `lg
                     | `md
                     | `sm

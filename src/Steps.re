@@ -7,7 +7,7 @@ external make:
     ~className: string=?,
     
     ~current: int=?,
-    ~currentStatus: [@bs.string] [
+    ~currentStatus:  [
                   | `finish
                   | `wait
                   | `process
@@ -29,7 +29,7 @@ module Item = {
       ~description: React.element=?,
       ~icon: React.element=?,
       ~title: React.element=?,
-      ~status: [@bs.string] [
+      ~status:  [
                   | `finish
                   | `wait
                   | `process

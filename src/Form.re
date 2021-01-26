@@ -9,15 +9,15 @@ external make:
     ~action: string=?,
     ~name: string=?,
     ~acceptCharset: string=?,
-    ~autocomplete: [@bs.string] [
+    ~autocomplete:  [
       | `on
       | `off
     ]=?,
-    ~method: [@bs.string] [
+    ~method:  [
       | `get
       | `post
     ]=?,
-    ~target: [@bs.string] [
+    ~target:  [
       | `_blank
       | `_self
       | `_parent
@@ -25,14 +25,14 @@ external make:
     ]=?,
 
     ~checkDelay: int=?,
-    ~checkTrigger: [@bs.string] [
+    ~checkTrigger:  [
       | `change
       | `blur
       | `none
     ]=?,
     ~errorFromContext: bool=?,
     ~fluid: bool=?,
-    ~layout: [@bs.string] [
+    ~layout:  [
       | `horizontal
       | `vertical
       | `inline

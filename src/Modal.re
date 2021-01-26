@@ -7,7 +7,7 @@ external make:
     ~className: string=?,
 
     ~autoFocus: bool=?,
-    ~backdrop: [@bs.string] [ // todo: bool
+    ~backdrop:  [ // todo: bool
       | `static
     ]=?,
     ~backdropClassName: string=?,
@@ -30,7 +30,7 @@ external make:
     ~onHide: unit => unit=?,
     ~onShow: unit => unit=?,
 
-    ~size: [@bs.string] [
+    ~size:  [
                   | `lg
                   | `md
                   | `sm

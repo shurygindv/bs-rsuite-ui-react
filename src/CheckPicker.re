@@ -9,7 +9,7 @@ external make:
     ~className: string=?,
     
     ~menuStyle: ReactDOMRe.Style.t=?,
-    ~appearance: [@bs.string] [ | `default | `subtle]=?,
+    ~appearance:  [ | `default | `subtle]=?,
     ~cacheData: array(RsuiteTypes.DataItemType.t)=?,
     ~block: bool=?,
     ~cleanable: bool=?,
@@ -36,7 +36,7 @@ external make:
     ~onClean: ReactEvent.Synthetic.t => unit=?,
     ~onGroupTitleClick: ReactEvent.Synthetic.t => unit=?,
     ~placeholder: React.element=?,
-    ~placement: [@bs.string] [
+    ~placement:  [
                   | `left
                   | `leftStart
                   | `leftEnd
@@ -68,7 +68,7 @@ external make:
     ~renderExtraFooter: unit => React.element=?,
     ~sort: (bool, string, string) => int=?, // TODO
     ~toggleComponentClass: unit => React.element=?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?
+    ~size:  [ | `lg | `md | `sm | `xs]=?
   ) =>
   React.element =
   "CheckPicker";

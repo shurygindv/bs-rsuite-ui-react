@@ -11,7 +11,7 @@ external make:
     ~full: bool=?,
     ~keyboard: bool=?,
     ~show: bool=?,
-    ~backdrop: [@bs.string] [ | `static]=?, // todo: +boolean
+    ~backdrop:  [ | `static]=?, // todo: +boolean
     ~onEnter: unit => unit=?,
     ~onEntered: unit => unit=?,
     ~onEntering: unit => unit=?,
@@ -20,7 +20,7 @@ external make:
     ~onExiting: unit => unit=?,
     ~onHide: unit => unit=?,
     ~onShow: unit => unit=?,
-    ~placement: [@bs.string] [
+    ~placement:  [
                   | `left
                   | `leftStart
                   | `leftEnd
@@ -35,7 +35,7 @@ external make:
                   | `bottomEnd
                 ]
                   =?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?
+    ~size:  [ | `lg | `md | `sm | `xs]=?
   ) =>
   React.element =
   "Drawer";

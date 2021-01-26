@@ -8,7 +8,7 @@ external make:
     ~classPrefix: string=?,
     ~className: string=?,
     
-    ~appearance: [@bs.string] [
+    ~appearance:  [
       | `default
       | `subtle
     ]=?,
@@ -25,7 +25,7 @@ external make:
       bool,
       string // TODO +unions: 'CALENDAR', 'TOOLBAR...
     ) => bool=?,
-    ~hoverRange: [@bs.string] [
+    ~hoverRange:  [
       | `week
       | `month
     ]=?, // TODO: or  (date: Date)=> Array<Date>
@@ -40,7 +40,7 @@ external make:
     ~oneTap: bool=?,
     ~_open: bool=?,
     ~placeholder: string=?,
-    ~placement: [@bs.string] [
+    ~placement:  [
       | `left
       | `leftStart
       | `leftEnd
@@ -60,7 +60,7 @@ external make:
     ~preventOverflow: bool=?,
     ~ranges: array(RsuiteTypes.Range.t)=?,
     ~showWeekNumbers: bool=?,
-    ~size: [@bs.string] [
+    ~size:  [
       | `lg
       | `md
       | `sm

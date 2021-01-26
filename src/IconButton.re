@@ -20,7 +20,7 @@ external make:
     ] = ?,
     ~href: string=?,
     ~icon: React.element=?,
-    ~placement: [@bs.string] [
+    ~placement:  [
                   | `left
                   | `leftStart
                   | `leftEnd

@@ -9,7 +9,7 @@ external make:
     ~block: bool=?,
     ~justified: bool=?,
     ~vertical: bool=?,
-    ~size: [@bs.string] [ | `lg | `md | `sm | `xs]=?
+    ~size:  [ | `lg | `md | `sm | `xs]=?
   ) =>
   React.element =
   "ButtonGroup";
