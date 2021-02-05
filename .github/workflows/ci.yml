@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install NPM dependencies
-        run: npm i
+        run: npm ci --also=dev
 
       - name: NPM audit
         run: npm audit --audit-level high
