@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "reason-react": "^0.8.0",
-    "rsuite": "^4.5.0"
+    "rsuite": "^2.1.3"
   }
 }

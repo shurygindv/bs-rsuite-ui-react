@@ -1,0 +1,32 @@
+name: bs rsuite ui CI
+
+on: [push]
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    env:
+      NODE_ENV: production
+      CI: true
+
+    strategy:
+      fail-fast: true
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install NPM dependencies
+        run: npm i
+
+      - name: NPM audit
+        run: npm audit --audit-level high
+
+      - name: build
+        run: npm run bs:rebuild
