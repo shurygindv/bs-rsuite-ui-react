@@ -1,6 +1,7 @@
 # ReasonML bindings for [Rsuite UI React library](https://rsuitejs.com)
 
 [![npm version](https://badge.fury.io/js/bs-rsuite-ui-react.svg)](https://badge.fury.io/js/bs-rsuite-ui-react)
+![bs rsuite ui CI](https://github.com/shurygindv/bs-rsuite-ui-react/workflows/bs%20rsuite%20ui%20CI/badge.svg)
 
 [Official overview](https://rsuitejs.com/en/components/overview) (bindings according it)
 
